@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Divi 1.0\n"
 "POT-Creation-Date: 2015-02-09 02:38+0300\n"
-"PO-Revision-Date: 2015-02-09 04:46+0300\n"
+"PO-Revision-Date: 2015-02-17 22:07+0300\n"
 "Last-Translator: \n"
 "Language-Team: Elegant Themes\n"
 "Language: fr\n"
@@ -148,11 +148,11 @@ msgstr "Paramètres ET"
 
 #: ../functions.php:283
 msgid "Projects"
-msgstr "Galeries"
+msgstr "Projets"
 
 #: ../functions.php:284
 msgid "Project"
-msgstr "Galerie"
+msgstr "Projet"
 
 #: ../functions.php:285 ../functions.php:367
 msgid "Add New"
@@ -160,27 +160,27 @@ msgstr "Ajouter nouveau"
 
 #: ../functions.php:286
 msgid "Add New Project"
-msgstr "Ajouter nouvelle galerie"
+msgstr "Ajouter nouvelle projet"
 
 #: ../functions.php:287
 msgid "Edit Project"
-msgstr "Modifier galerie"
+msgstr "Modifier projet"
 
 #: ../functions.php:288
 msgid "New Project"
-msgstr "Nouvelle galerie"
+msgstr "Nouvelle projet"
 
 #: ../functions.php:289
 msgid "All Projects"
-msgstr "Toutes les galeries"
+msgstr "Tous les projets"
 
 #: ../functions.php:290
 msgid "View Project"
-msgstr "Voir galerie"
+msgstr "Voir projet"
 
 #: ../functions.php:291
 msgid "Search Projects"
-msgstr "Chercher dans galeries"
+msgstr "Chercher dans projets"
 
 #: ../functions.php:292 ../functions.php:374
 msgid "Nothing found"

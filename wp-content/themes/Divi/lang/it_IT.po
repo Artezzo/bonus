@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Divi 1.0\n"
 "POT-Creation-Date: 2015-02-09 03:09+0300\n"
-"PO-Revision-Date: 2015-02-09 03:10+0300\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2015-02-17 21:58+0300\n"
+"Last-Translator: Riccardo Cremona <mipime@libero.it>\n"
 "Language-Team: Elegant Themes\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -80,7 +80,7 @@ msgstr "Menu piè di pagina"
 
 #: ../functions.php:71
 msgid "on"
-msgstr " "
+msgstr "il "
 
 #: ../functions.php:128
 msgid ""
@@ -112,7 +112,7 @@ msgstr "Indietro"
 #: ../functions.php:134 ../epanel/shortcodes/shortcodes.php:15
 #: ../epanel/shortcodes/shortcodes.php:518
 msgid "Previous"
-msgstr "Indietro"
+msgstr "Precedente"
 
 #: ../functions.php:135 ../epanel/shortcodes/shortcodes.php:15
 #: ../epanel/shortcodes/shortcodes.php:519
@@ -246,7 +246,7 @@ msgstr "Cerca tag"
 
 #: ../functions.php:345
 msgid "All Tags"
-msgstr "Tutte le tag"
+msgstr "Tutte i tag"
 
 #: ../functions.php:346
 msgid "Parent Tag"
@@ -400,7 +400,7 @@ msgstr "Navigazione a barra laterale"
 #: ../et-pagebuilder/et-pagebuilder.php:8819
 #: ../et-pagebuilder/et-pagebuilder.php:9639
 msgid "Off"
-msgstr "Attiva"
+msgstr "Disattiva"
 
 #: ../functions.php:455 ../et-pagebuilder/et-pagebuilder.php:862
 #: ../et-pagebuilder/et-pagebuilder.php:6206
@@ -410,7 +410,7 @@ msgstr "Attiva"
 #: ../et-pagebuilder/et-pagebuilder.php:8814
 #: ../et-pagebuilder/et-pagebuilder.php:9644
 msgid "On"
-msgstr "Disattiva"
+msgstr "Attiva"
 
 #: ../functions.php:469 ../et-pagebuilder/et-pagebuilder.php:4028
 #: ../et-pagebuilder/et-pagebuilder.php:4704
@@ -418,7 +418,7 @@ msgstr "Disattiva"
 #: ../et-pagebuilder/et-pagebuilder.php:5350
 #: ../et-pagebuilder/et-pagebuilder.php:8106
 msgid "Use Background Color"
-msgstr "Utilizza sfondo colorato"
+msgstr "Utilizza colore di sfondo"
 
 #: ../functions.php:473 ../et-pagebuilder/et-pagebuilder.php:877
 #: ../et-pagebuilder/et-pagebuilder.php:3057
@@ -450,7 +450,7 @@ msgstr "Colore dello sfondo"
 #: ../et-pagebuilder/et-pagebuilder.php:9327
 #: ../et-pagebuilder/et-pagebuilder.php:9853
 msgid "Hex Value"
-msgstr "Valore colore"
+msgstr "Valore Hex"
 
 #: ../functions.php:478 ../et-pagebuilder/et-pagebuilder.php:1540
 #: ../et-pagebuilder/et-pagebuilder.php:2137
@@ -483,7 +483,7 @@ msgstr "Impostazioni tema"
 
 #: ../functions.php:625
 msgid "Fonts"
-msgstr "Font"
+msgstr "Carattere"
 
 #: ../functions.php:630
 msgid "Schemes"
@@ -493,8 +493,8 @@ msgstr "Combinazioni"
 msgid ""
 "Note: Color settings set above should be applied to the Default color scheme."
 msgstr ""
-"Nota: le impostazioni colore soprindicate si applicano solo alla "
-"Combinazione colori predefinita."
+"Nota: le impostazioni colore soprindicate si applicano solo alla schema "
+"colore predefinito."
 
 #: ../functions.php:643
 msgid "Link Color"
@@ -502,7 +502,7 @@ msgstr "Colore link"
 
 #: ../functions.php:656
 msgid "Main Font Color"
-msgstr "Colore font principale"
+msgstr "Colore carattere principale"
 
 #: ../functions.php:669
 msgid "Accent Color"
@@ -510,19 +510,19 @@ msgstr "Colore principale"
 
 #: ../functions.php:682
 msgid "Footer Background Color"
-msgstr "Colore sfondo menu a piè di pagina"
+msgstr "Colore sfondo piè di pagina"
 
 #: ../functions.php:695
 msgid "Menu Links Color"
-msgstr "Colore menu collegamenti"
+msgstr "Colore menu link"
 
 #: ../functions.php:708
 msgid "Active Menu Link Color"
-msgstr "Colore collegamento menu attivo"
+msgstr "Colore menu link attivo"
 
 #: ../functions.php:720
 msgid "Boxed Layout"
-msgstr "Layout a riquadri"
+msgstr "Layout a larghezza fissa"
 
 #: ../functions.php:734
 msgid "Stretch Background Image"
@@ -534,14 +534,11 @@ msgstr "Navigazione a barra verticale"
 
 #: ../functions.php:760
 msgid "Show Social Icons in Header"
-msgstr ""
-"Mostra i pulsanti icona dei social network nell'intestazione del sito web"
+msgstr "Mostra icone dei social network nell'intestazione"
 
 #: ../functions.php:774
 msgid "Show Social Icons in Footer"
-msgstr ""
-"Mostra pulsanti icona dei social network nell'intestazione a piè di pagina "
-"del sito web"
+msgstr "Mostra icona social network a piè di pagina"
 
 #: ../functions.php:788
 msgid "Show Search Icon"
@@ -565,11 +562,11 @@ msgstr "Numero di telefono"
 
 #: ../functions.php:832 ../et-pagebuilder/et-pagebuilder.php:5826
 msgid "Email"
-msgstr "Indirizzo e-mail"
+msgstr "Indirizzo E-mail"
 
 #: ../functions.php:846
 msgid "Primary Navigation Background"
-msgstr "Colore sfondo barra di navigazione primaria"
+msgstr "Colore sfondo menu navigazione primario"
 
 #: ../functions.php:860
 msgid "Primary Navigation Text Color"
@@ -577,7 +574,7 @@ msgstr "Colore testo navigazione primaria"
 
 #: ../functions.php:878
 msgid "Secondary Navigation Background"
-msgstr "Colore sfondo barra di navigazione secondaria"
+msgstr "Colore sfondo menu di navigazione secondario"
 
 #: ../functions.php:892
 msgid "Secondary Navigation Text Color"
@@ -585,11 +582,11 @@ msgstr "Colore testo navigazione secondaria"
 
 #: ../functions.php:911
 msgid "Header Font"
-msgstr "Font intestazione"
+msgstr "Carattere dell'intestazione"
 
 #: ../functions.php:926
 msgid "Body Font"
-msgstr "Font corpo del testo"
+msgstr "Carattere del Body"
 
 #: ../functions.php:942
 msgid "Color Schemes"
@@ -721,7 +718,7 @@ msgstr "Eccezione API Aweber"
 #: ../epanel/shortcodes/shortcodes.php:1021
 #: ../et-pagebuilder/et-pagebuilder.php:7211
 msgid "Type"
-msgstr "Tipologia"
+msgstr "Tipo"
 
 #: ../functions.php:1640 ../functions.php:4615
 msgid "Message"
@@ -971,7 +968,7 @@ msgstr "impostazioni salvate."
 
 #: ../epanel/core_functions.php:93
 msgid "settings reset."
-msgstr "impostazioni predefinite ripristinate."
+msgstr "Reset Impostazioni"
 
 #: ../epanel/core_functions.php:111 ../epanel/options_divi.php:297
 #: ../epanel/options_divi.php:448
@@ -980,7 +977,7 @@ msgstr "Impostazioni generali"
 
 #: ../epanel/core_functions.php:114
 msgid "Navigation"
-msgstr "Barra di navigazione"
+msgstr "Menu di navigazione"
 
 #: ../epanel/core_functions.php:117
 msgid "Layout Settings"
@@ -1008,7 +1005,7 @@ msgstr "Documentazione di supporto"
 
 #: ../epanel/core_functions.php:209 ../epanel/core_functions.php:389
 msgid "Reset"
-msgstr "Ripristina"
+msgstr "Reset"
 
 #: ../epanel/core_functions.php:210
 msgid "Upload Image"
@@ -1027,8 +1024,8 @@ msgid ""
 "This will return all of the settings throughout the options page to their "
 "default values. <strong>Are you sure you want to do this?</strong>"
 msgstr ""
-"Questa azione cancellerà tutte le impostazioni personalizzate e ripristinerà "
-"i valori predefiniti. <strong>Vuoi procedere?</strong>"
+"Questa azione riporterà tutte le impostazioni della pagina ai valori "
+"predefiniti. <strong>Vuoi procedere?</strong>"
 
 #: ../epanel/core_functions.php:559 ../et-pagebuilder/et-pagebuilder.php:1159
 #: ../et-pagebuilder/et-pagebuilder.php:1700
@@ -1060,7 +1057,7 @@ msgstr "404 Non trovato"
 #: ../epanel/custom_functions.php:781
 #, php-format
 msgid "Currently viewing archives from %1$s"
-msgstr "Visualizzazione attuale archivio da %1$s"
+msgstr "Visualizzando archivio da %1$s"
 
 #: ../epanel/custom_functions.php:1014
 msgid "Image doesn't exist"
@@ -1074,10 +1071,10 @@ msgid ""
 "disappear once you have clicked the Save button within the <a href=\"%2$s"
 "\">theme's options page</a>.</p></div>"
 msgstr ""
-"<div class=\"updated\"><p>Nuova installazione del tema %1$s. Vai a <a href="
-"\"%2$s\">ePanel</a> per le impostazioni. Il messaggio scomparirà non appena "
-"premuto il pulsante Salva all'interno della <a href=\"%2$s\">pagina opzioni "
-"del tema</a>.</p></div>"
+"<div class=\"updated\"><p>questa è un nuova installazione del tema %1$s. Vai "
+"sul <a href=\"%2$s\">ePanel</a> per le impostazioni.  Questo messaggio "
+"scomparirà non appena premuto il pulsante Salva all'interno della <a href="
+"\"%2$s\">pagina opzioni del tema</a>.</p></div>"
 
 #: ../epanel/custom_functions.php:1222
 #, php-format
@@ -1138,8 +1135,8 @@ msgid ""
 "If you would like to use your own custom favicon image click the Upload "
 "Image button."
 msgstr ""
-"Se desideri utilizzare la tua immagine favicon personalizzata, clicca il "
-"pulsante Carica immagine."
+"Se desideri utilizzare una tua immagine favicon, clicca il pulsante Carica "
+"immagine."
 
 #: ../epanel/options_divi.php:61
 msgid "Fixed Navigation Bar"
@@ -1151,9 +1148,9 @@ msgid ""
 "suggest to disable this option, if you need to use a logo taller than the "
 "default one."
 msgstr ""
-"Per impostazione predefinita la barra di navigazione compare sempre nella "
-"parte superiore dello schermo. Disabilita questa opzione se la tua immagine "
-"logo è molto grande."
+"Per impostazione predefinita la barra di navigazione compare sempre in cima "
+"allo schermo. Disabilita questa opzione se devi usare un logo più alto di "
+"quello predefinito."
 
 #: ../epanel/options_divi.php:70
 msgid "Grab the first post image"
@@ -1168,11 +1165,11 @@ msgid ""
 "image in your post. The image must be hosted on your own server."
 msgstr ""
 "Per impostazione predefinita le miniature sono create utilizzando i campi "
-"personalizzati. Se desideri utilizzare per le tue miniature le immagini che "
-"si trovano già nel tuo post (senza utilizzare i campi personalizzati) puoi "
-"attivare questa opzione. Una volta attivata l'opzione, le miniature saranno "
-"generate automaticamente utilizzando la prima immagine del tuo post. "
-"L'immagine deve essere ospitata nel tuo server."
+"personalizzati. Se per le tue miniature desideri utilizzare immagini che già "
+"si trovano nel tuo post (senza utilizzare i campi personalizzati) puoi "
+"attivare questa opzione. Una volta attivata, le miniature saranno generate "
+"automaticamente utilizzando la prima immagine del tuo post. L'immagine deve "
+"essere ospitata nel tuo server."
 
 #: ../epanel/options_divi.php:77
 msgid "Blog Style Mode"
@@ -1184,9 +1181,9 @@ msgid ""
 "to create post previews. If you would rather show your posts in full on "
 "index pages like a traditional blog then you can activate this feature."
 msgstr ""
-"Per impostazione predefinita il tema visualizza automaticamente i tuoi post "
-"in modalità anteprima. Se desideri visualizzare i post completi, puoi "
-"attivare questa opzione."
+"Per impostazione predefinita il tema tronca i tuoi post nell' indice/"
+"homepage per generare le anteprime degli articoli. Se desideri visualizzare "
+"i post completi, come un blog tradizionale puoi attivare questa opzione."
 
 #: ../epanel/options_divi.php:86
 msgid "Shop Page & Category Page Layout for WooCommerce"
@@ -1229,10 +1226,10 @@ msgid ""
 "but it doesn't appear within the SignUp module settings, activate this "
 "option. Don't forget to disable it once the list has been regenerated."
 msgstr ""
-"Per impostazione predefinita la cache delle liste MailChimp è svuotata una "
-"volta al giorno. Attiva questa opzione se hai aggiunto una nuova lista, ma "
-"questa non appare nelle impostazioni modulo di registrazione. Ricordati di "
-"disabilitare l'opzione una volta generata nuovamente la lista."
+"Per impostazione predefinita le liste di MailChimp sono memorizzate nella "
+"cache per un giorno. Attiva questa opzione se aggiungendo una nuova lista "
+"questa non appare nelle impostazioni del modulo di registrazione. Ricordati "
+"di disabilitarla una volta generata nuovamente la lista."
 
 #: ../epanel/options_divi.php:119
 msgid "Regenerate Aweber Lists"
@@ -1244,19 +1241,19 @@ msgid ""
 "it doesn't appear within the SignUp module settings, activate this option. "
 "Don't forget to disable it once the list has been regenerated."
 msgstr ""
-"Per impostazione predefinita la cache delle liste Aweber è svuotata una "
-"volta al giorno. Attiva questa opzione se hai aggiunto una nuova lista, ma "
-"questa non appare nelle impostazioni modulo di registrazione. Ricordati di "
-"disabilitare l'opzione una volta generata nuovamente la lista."
+"Per impostazione predefinita le liste di Aweber sono memorizzate nella cache "
+"per un giorno. Attiva questa opzione se aggiungendo una nuova lista questa "
+"non appare nelle impostazioni del modulo di registrazione. Ricordati di "
+"disabilitarla una volta generata nuovamente la lista."
 
 #: ../epanel/options_divi.php:127
 msgid "Show Facebook Icon"
-msgstr "Mostra icona Facebook"
+msgstr "Mostra l'icona Facebook"
 
 #: ../epanel/options_divi.php:131
 msgid "Here you can choose to display the Facebook Icon on your homepage. "
 msgstr ""
-"Puoi scegliere qui di visualizzare l'icona Facebook sulla tua homepage. "
+"Qui puoi scegliere di visualizzare l'icona Facebook nella tua homepage. "
 
 #: ../epanel/options_divi.php:133
 msgid "Show Twitter Icon"
@@ -1265,24 +1262,24 @@ msgstr "Mostra l'icona Twitter"
 #: ../epanel/options_divi.php:137
 msgid "Here you can choose to display the Twitter Icon. "
 msgstr ""
-"Puoi scegliere qui di visualizzare l'icona Twitter sulla tua homepage. "
+"Qui puoi scegliere di visualizzare l'icona Twitter nella tua homepage. "
 
 #: ../epanel/options_divi.php:141
 msgid "Show Google+ Icon"
-msgstr "Mostra icona Google+"
+msgstr "Mostra l'icona Google+"
 
 #: ../epanel/options_divi.php:145
 msgid "Here you can choose to display the Google+ Icon on your homepage. "
 msgstr ""
-"Puoi scegliere qui di visualizzare l'icona Google+ sulla tua homepage. "
+"Qui puoi scegliere di visualizzare l'icona Google+ sulla tua homepage. "
 
 #: ../epanel/options_divi.php:147
 msgid "Show RSS Icon"
-msgstr "Mostra icona RSS"
+msgstr "Mostra l'icona RSS"
 
 #: ../epanel/options_divi.php:151
 msgid "Here you can choose to display the RSS Icon. "
-msgstr "Puoi scegliere qui di visualizzare l'icona RSS sulla tua homepage. "
+msgstr "Qui puoi scegliere di visualizzare l'icona RSS sulla tua homepage. "
 
 #: ../epanel/options_divi.php:155 ../et-pagebuilder/et-pagebuilder.php:4384
 msgid "Facebook Profile Url"
@@ -1327,7 +1324,7 @@ msgid ""
 "options in wp-admin."
 msgstr ""
 "Qui puoi indicare quanti articoli recenti vuoi visualizzare nella pagina "
-"Categoria. Questa opzione è indipendente dalle opzioni di Lettura in wp-"
+"Categoria. Questa opzione è indipendente dalle Impostazioni > Lettura in wp-"
 "admin."
 
 #: ../epanel/options_divi.php:191
@@ -1341,7 +1338,8 @@ msgid ""
 "in wp-admin."
 msgstr ""
 "Qui puoi indicare quanti articoli recenti vuoi visualizzare nelle pagine "
-"Archivio. Questa opzione è indipendente dalle opzioni di Lettura in wp-admin."
+"Archivio. Questa opzione è indipendente dalle Impostazioni > Lettura in wp-"
+"admin."
 
 #: ../epanel/options_divi.php:199
 msgid "Number of Posts displayed on Search pages"
@@ -1354,8 +1352,8 @@ msgid ""
 "options in wp-admin."
 msgstr ""
 "Qui puoi indicare quanti articoli recenti vuoi visualizzare nelle pagine dei "
-"risultati Cerca. Questa opzione è indipendente dalle opzioni di Lettura in "
-"wp-admin."
+"risultati Cerca. Questa opzione è indipendente dalle Impostazioni > Lettura "
+"in wp-admin."
 
 #: ../epanel/options_divi.php:207
 msgid "Number of Posts displayed on Tag pages"
@@ -1368,7 +1366,7 @@ msgid ""
 "in wp-admin."
 msgstr ""
 "Qui puoi indicare quanti articoli recenti vuoi visualizzare nelle pagine "
-"Tag. Questa opzione è indipendente dalle opzioni di Lettura in wp-admin."
+"Tag. Questa opzione è indipendente dalle Impostazioni > Lettura in wp-admin."
 
 #: ../epanel/options_divi.php:215
 msgid "Date format"
@@ -1382,28 +1380,27 @@ msgid ""
 "Time</a>"
 msgstr ""
 "Questa opzione permette di modificare il formato di visualizzazione della "
-"data. Per ulteriori informazioni vedere il codice WordPress qui:<a "
+"data. Per ulteriori informazioni consultare il codex di WordPress qui:<a "
 "href='http://codex.wordpress.org/Formatting_Date_and_Time' "
 "target='_blank'>Impostazione formato ora e data</a>"
 
 #: ../epanel/options_divi.php:225
 msgid "Use excerpts when defined"
-msgstr "Utilizza estratti quando definito"
+msgstr "Utilizza riassunti quando definiti"
 
 #: ../epanel/options_divi.php:229
 msgid "This will enable the use of excerpts in posts or pages."
-msgstr ""
-"Questa azione abilita l'utilizzazione di estratti nei post o nelle pagine."
+msgstr "Questa azione abilita l'uso dei riassunti nei post o nelle pagine."
 
 #: ../epanel/options_divi.php:232
 msgid "Responsive shortcodes"
-msgstr "shortcodes reattivi"
+msgstr "shortcodes responsivi"
 
 #: ../epanel/options_divi.php:236
 msgid "Enable this option to make shortcodes respond to various screen sizes"
 msgstr ""
-"Abilitando questa opzione i shortcodes reagiranno alle diverse dimensioni "
-"dello schermo"
+"Abilitando questa opzione i shortcodes si adatteranno alle diverse "
+"dimensioni dello schermo"
 
 #: ../epanel/options_divi.php:241
 msgid "Google Fonts subsets"
@@ -1426,12 +1423,12 @@ msgstr ""
 
 #: ../epanel/options_divi.php:255
 msgid "Smooth Scrolling"
-msgstr "Scorrimento facile"
+msgstr "Scorrimento fluido"
 
 #: ../epanel/options_divi.php:259
 msgid "Enable this option to get the smooth scrolling effect with mouse wheel"
 msgstr ""
-"Abilita questa opzione per ottenere uno scorrimento facile con la rotella "
+"Abilita questa opzione per ottenere uno scorrimento fluido con la rotella "
 "del mouse"
 
 #: ../epanel/options_divi.php:264
@@ -1441,8 +1438,8 @@ msgstr "CSS personalizzato"
 #: ../epanel/options_divi.php:268
 msgid "Here you can add custom css to override or extend default styles."
 msgstr ""
-"Puoi aggiungere qui un CSS personalizzato per eseguire l'override o "
-"estendere gli stili predefiniti."
+"Qui puoi aggiungere CSS personalizzati per sovrascrivere o estendere gli "
+"stili predefiniti."
 
 #: ../epanel/options_divi.php:287
 msgid "Pages"
@@ -1457,7 +1454,7 @@ msgid ""
 "Here you can choose to remove certain pages from the navigation menu. All "
 "pages marked with an X will not appear in your navigation bar. "
 msgstr ""
-"Puoi scegliere qui di rimuovere alcune pagine dal menu di navigazione. Tutte "
+"Qui puoi scegliere di rimuovere alcune pagine dal menu di navigazione. Tutte "
 "le pagine contrassegnate con una X non appariranno nella tua barra di "
 "navigazione. "
 
@@ -1475,7 +1472,7 @@ msgstr ""
 
 #: ../epanel/options_divi.php:320
 msgid "Display Home link"
-msgstr "Visualizza collegamento Home"
+msgstr "Visualizza link a Home"
 
 #: ../epanel/options_divi.php:324
 msgid ""
@@ -1484,29 +1481,29 @@ msgid ""
 "already created a page called Home to use, this will result in a duplicate "
 "link. In this case you should disable this feature to remove the link."
 msgstr ""
-"Per impostazione predefinita il tema crea un collegamento Home che "
-"reindirizza alla homepage del tuo blog. Se utilizzi una homepage statica e "
-"hai già creato una pagina Home, otterrai un collegamento doppio. Disabilita "
-"questa opzione per rimuovere il collegamento."
+"Per impostazione predefinita il tema crea un link a  Home che reindirizza "
+"alla homepage del tuo blog. Se utilizzi una homepage statica e hai già "
+"creato una pagina Home, otterrai un collegamento doppio. Disabilita questa "
+"opzione per rimuovere il link."
 
 #: ../epanel/options_divi.php:329
 msgid "Sort Pages Links"
-msgstr "Ordina collegamenti pagine"
+msgstr "Ordina i link nelle pagine"
 
 #: ../epanel/options_divi.php:333
 msgid "Here you can choose to sort your pages links."
-msgstr "Puoi scegliere qui come ordinare i collegamenti alle pagine."
+msgstr "Qui puoi scegliere come ordinare i link alle pagine."
 
 #: ../epanel/options_divi.php:336
 msgid "Order Pages Links by Ascending/Descending"
-msgstr "Ordina collegamenti pagine in ordine crescente/decrescente"
+msgstr "Ordina i link alle pagine in ordine crescente/decrescente"
 
 #: ../epanel/options_divi.php:340
 msgid ""
 "Here you can choose to reverse the order that your pages links are "
 "displayed. You can choose between ascending and descending."
 msgstr ""
-"Puoi scegliere qui di invertire l'ordine con cui visualizzare i collegamenti "
+"Qui puoi scegliere di invertire l'ordine con cui visualizzare i collegamenti "
 "alle pagine. Puoi scegliere tra ordine crescente e decrescente."
 
 #: ../epanel/options_divi.php:343 ../epanel/options_divi.php:384
@@ -1559,7 +1556,7 @@ msgstr ""
 
 #: ../epanel/options_divi.php:394
 msgid "Sort Categories Links by Name/ID/Slug/Count/Term Group"
-msgstr "Ordina i collegamenti categorie per Gruppo Name/ID/Slug/Count/Term"
+msgstr "Ordina i link alle categorie per Gruppo Name/ID/Slug/Count/Term"
 
 #: ../epanel/options_divi.php:398
 msgid ""
@@ -1583,7 +1580,7 @@ msgstr ""
 
 #: ../epanel/options_divi.php:414
 msgid "Disable top tier dropdown menu links"
-msgstr "Disabilita livello superiore collegamenti menu a discesa"
+msgstr "Disabilita i link al livello superiore nei menu a discesa"
 
 #: ../epanel/options_divi.php:418
 msgid ""
@@ -1594,12 +1591,12 @@ msgid ""
 "links from all parent pages/categories so that they don't lead anywhere when "
 "clicked."
 msgstr ""
-"In alcuni casi gli utenti desiderano creare categorie padre o collegamenti "
-"come placeholder per identificare un elenco di collegamenti figlio o di "
-"categorie. È auspicabile in questi casi che i collegamenti padre servano "
-"solo come funzione organizzativa. Abilitando questa opzione i collegamenti "
-"sono rimossi dalle categorie/pagine padre e non reindirizzano a nessuna "
-"pagina se cliccati."
+"In alcuni casi gli utenti desiderano creare categorie genitore o link come "
+"segnaposto per identificare un elenco di collegamenti a pagine figlie o "
+"categorie. È auspicabile in questi casi che i link nel genitore servano solo "
+"come funzione organizzativa. Abilitando questa opzione i collegamenti sono "
+"rimossi dalle categorie/pagine padre e se cliccati non indirizzano a nessuna "
+"pagina."
 
 #: ../epanel/options_divi.php:438
 msgid "Single Post Layout"
@@ -1620,10 +1617,10 @@ msgid ""
 "basic information about your post. The highlighted itmes shown below will "
 "appear. "
 msgstr ""
-"Puoi scegliere qui quali elementi possono apparire nella sezione "
-"informazioni del post nelle pagine dei singoli post. In quest'area, "
-"solitamente sotto il titolo del post, vengono visualizzate le informazioni "
-"di base del post. Saranno visualizzati gli elementi evidenziati di seguito. "
+"Qui puoi scegliere quali elementi possono apparire nella sezione "
+"informazioni del post nelle pagine dei post singoli. Quest'area, solitamente "
+"stuata sotto il titolo del post, visualizza alcune informazioni di base del "
+"post. Gli elementi evidenziati saranno visualizzati. "
 
 #: ../epanel/options_divi.php:464
 msgid "Show comments on posts"
@@ -1634,8 +1631,8 @@ msgid ""
 "You can disable this option if you want to remove the comments and comment "
 "form from single post pages. "
 msgstr ""
-"Disabilita questa opzione se vuoi rimuovere i commenti e il riquadro "
-"commenti dai post. "
+"Disabilita questa opzione se vuoi rimuovere i commenti e il modulo per i "
+"commenti dalla pagina dei post. "
 
 #: ../epanel/options_divi.php:471
 msgid "Place Thumbs on Posts"
@@ -1647,9 +1644,9 @@ msgid ""
 "post pages. If you would like to remove this initial thumbnail image to "
 "avoid repetition simply disable this option. "
 msgstr ""
-"Per impostazione predefinita le immagini miniatura sono inserite all'inizio "
-"del post nelle pagine dei singoli post. Disabilita questa opzione se vuoi "
-"rimuovere l'immagine miniatura iniziale per evitare ripetizioni. "
+"Per impostazione predefinita le miniature delle immagini sono inserite "
+"all'inizio del post nelle pagine dei post singoli. Disabilita questa opzione "
+"se vuoi rimuovere questa miniatura iniziale per evitare ripetizioni. "
 
 #: ../epanel/options_divi.php:486
 msgid "Place Thumbs on Pages"
@@ -1661,9 +1658,9 @@ msgid ""
 "However, if you want to use thumbnails on pages you can! Just enable this "
 "option. "
 msgstr ""
-"Come impostazione predefinita, la anteprime non sono collocate sulle pagine "
-"(sono usate solo con gli articoli). Tuttavia, se vuoi puoi utillizare le "
-"anteprime sulle pagina attivando questa opzione. "
+"Come impostazione predefinita, le miniature delle immagini non sono "
+"collocate sulle pagine (sono usate solo con gli articoli). Tuttavia, se vuoi "
+"puoi utillizare le miniature sulle pagina attivando questa opzione. "
 
 #: ../epanel/options_divi.php:493
 msgid "Show comments on pages"
@@ -1674,8 +1671,9 @@ msgid ""
 "By default comments are not placed on pages, however, if you would like to "
 "allow people to comment on your pages simply enable this option. "
 msgstr ""
-"Per impostazione predefinita i commenti non sono inserite nelle pagine. "
-"Abilita questa opzione se vuoi permettere i commenti alle pagine. "
+"Per impostazione predefinita i commenti non sono inseriti nelle pagine. "
+"Abilita questa opzione se vuoi permettere alle persone di commentare nelle "
+"pagine."
 
 #: ../epanel/options_divi.php:508
 msgid "Post info section"
@@ -1687,19 +1685,18 @@ msgid ""
 "This is the area, usually below the post title, which displays basic "
 "information about your post. The highlighted itmes shown below will appear. "
 msgstr ""
-"Puoi scegliere qui quali elementi possono apparire nella sezione "
-"informazioni dell'articolo nelle pagine. In quest'area, solitamente sotto il "
-"titolo del post, vengono visualizzate le informazioni di base del post. "
-"Saranno visualizzati gli elementi evidenziati di seguito. "
+"Qui puoi scegliere quali elementi possono apparire nella sezione "
+"informazioni articolo nelle pagine. Quest'area, solitamente sotto il titolo "
+"del post, visualizza le informazioni di base del post.  Gli elementi "
+"evidenziati qui sotto saranno visualizzati. "
 
 #: ../epanel/options_divi.php:517
 msgid "Show Thumbs on Index pages"
-msgstr "Mostra le Immagini miniatura nelle pagine iniziali."
+msgstr "Mostra le Immagini miniatura nelle pagine indice."
 
 #: ../epanel/options_divi.php:521
 msgid "Enable this option to show thumbnails on Index Pages."
-msgstr ""
-"Abilita questa opzione per mostrare le miniature nelle Pagine iniziali."
+msgstr "Abilita questa opzione per mostrare le miniature nelle Pagine indice."
 
 #: ../epanel/options_divi.php:540
 msgid "Homepage SEO"
@@ -1711,7 +1708,7 @@ msgstr "SEO Pagina post singolo"
 
 #: ../epanel/options_divi.php:550
 msgid "Index Page SEO"
-msgstr "SEO Pagina iniziale"
+msgstr "SEO Pagina indice"
 
 #: ../epanel/options_divi.php:558
 msgid " Enable custom title "
@@ -1727,8 +1724,8 @@ msgstr ""
 "Per impostazione predefinita il tema utilizza una combinazione del nome del "
 "tuo blog e della sua descrizione, indicata da te al momento della creazione "
 "del blog, per creare i titoli delle homepage.  Abilita questa opzione se "
-"vuoi creare un titolo personalizzato e completa il campo titolo "
-"personalizzato qui di seguito. "
+"vuoi creare un titolo personalizzato e riempi il campo titolo personalizzato "
+"qui di seguito. "
 
 #: ../epanel/options_divi.php:565
 msgid " Enable meta description"
@@ -1743,8 +1740,8 @@ msgid ""
 msgstr ""
 "Per impostazione predefinita il tema utilizza la descrizione del tuo blog, "
 "indicata da te al momento della creazione del blog, per completare il campo "
-"metadescrizione. Abilita questa opzione se vuoi utilizzare una descrizione "
-"differente e completa il campo descrizione personalizzata qui di seguito. "
+"meta description. Abilita questa opzione se vuoi utilizzare una descrizione "
+"differente e riempi il campo descrizione personalizzata qui di seguito. "
 
 #: ../epanel/options_divi.php:572
 msgid " Enable meta keywords"
@@ -1761,8 +1758,8 @@ msgstr ""
 "intestazione. La maggior parte dei motori di ricerca non utilizzano più le "
 "parole chiave per classificare i siti web. Se desideri, puoi comunque "
 "abilitare questa opzione. Abilita questa opzione se vuoi aggiungere il "
-"metadato parole chiave e completa il campo parole chiave personalizzate qui "
-"di seguito. "
+"metadato parole chiave e riempi il campo parole chiave personalizzate qui di "
+"seguito. "
 
 #: ../epanel/options_divi.php:579 ../epanel/options_divi.php:712
 msgid " Enable canonical URL's"
@@ -1783,16 +1780,16 @@ msgid ""
 "permalinks and the domain name defined in the settings tab of wp-admin."
 msgstr ""
 "La canonicalizzazione aiuta a evitare l'indicizzazione di contenuto "
-"dublicato da parte dei motori di riceca, e come risultato, può aiutare a "
-"evitare penalità e un peggioramento del pagerank. Alcuni pagine possono "
-"avere più di un URL che indirizza alla stessa pagina. Per esempio domain."
-"com, domain.com/index.html, e www.domain.com sono tutti diversi URL che "
-"conducono alla tua homepage. Dal punto di vista dei motori di ricerca, "
-"queste duplicazioni URLs, dovute spesso a link personalizzati, possono "
-"essere considerati individualmente invece di singola destinazione. L'URL "
-"canonicallizzato Defining indica al motore di ricerca quale URL desideri "
-"utilizzare in modo ufficiale. Il tema scollega i suoi URL canonicallizzati "
-"dai tuoi link e dal nome di dominio definito nella scheda impostazione di wp-"
+"duplicato da parte dei motori di riceca, e come risultato, può aiutare a "
+"evitare penalità e un peggioramento del pagerank. Alcune pagine possono "
+"avere diverse URL che indirizzano tutte alla stessa pagina. Per esempio "
+"domain.com, domain.com/index.html, e www.domain.com sono tutte URL diverse "
+"che conducono alla tua homepage. Dal punto di vista dei motori di ricerca, "
+"queste URL duplicate dovute spesso a link personalizzati, possono essere "
+"considerate individualmente invece che una singola destinazione. Definire "
+"una URL canonicalizzata indica al motore di ricerca quale URL desideri "
+"utilizzare ufficialmente. Il tema basa i suoi URL canonicallizzati fuori dai "
+"tuoi link e dal nome di dominio definito nella scheda impostazione di wp-"
 "admin."
 
 #: ../epanel/options_divi.php:588
@@ -1831,9 +1828,9 @@ msgid ""
 "Keywords should be separated by comas. For example: wordpress,themes,"
 "templates,elegant"
 msgstr ""
-"Se hai abilitato il metadato parole chiave, aggiungi qui le tue parole "
-"chiave personalizzate. Le parole chiave devono essere separate da virgole. "
-"Ad esempio: wordpress,themes,templates,elegant"
+"Se hai abilitato il meta keywords, aggiungi qui le tue parole chiave "
+"personalizzate. Le parole chiave devono essere separate da virgole. Ad "
+"esempio: wordpress,themes,templates,elegant"
 
 #: ../epanel/options_divi.php:612 ../epanel/options_divi.php:690
 msgid "If custom titles are disabled, choose autogeneration method"
@@ -1864,7 +1861,7 @@ msgid ""
 "Here you can change which character separates your blog title and post name "
 "when using autogenerated post titles. Common values are | or -"
 msgstr ""
-"Puoi cambiare qui quale carattere separerà il titolo del blog dal nome del "
+"Qui puoi cambiare quale carattere separerà il titolo del blog dal nome del "
 "post in caso di titoli di post generati automaticamente. Valori comuni sono "
 "| o -"
 
@@ -1881,11 +1878,11 @@ msgid ""
 "you must choose a custom field name for your title below."
 msgstr ""
 "Per impostazione predefinita il tema crea i titoli dei post sul titolo del "
-"tuo post e il nome del blog. Se desideri creare un metatitolo differente "
-"rispetto all'attuale titolo del post, puoi definire un titolo personalizzato "
-"per ogni post utilizzando i campi personalizzati. Abilita questa opzione se "
-"vuoi i titoli personalizzati, e scegli un campo personalizzato nome per il "
-"tuo titolo qui di seguito."
+"tuo post e il nome del blog. Se desideri creare un tag meta titolo "
+"differente rispetto all'attuale titolo del post, puoi definire un titolo "
+"personalizzato per ogni post utilizzando i campi personalizzati. Abilita "
+"questa opzione se vuoi i titoli personalizzati, e scegli un campo "
+"personalizzato nome per il tuo titolo qui di seguito."
 
 #: ../epanel/options_divi.php:641
 msgid "Enable custom description"
@@ -1898,11 +1895,11 @@ msgid ""
 "on post pages. You can add your meta description using custom fields based "
 "off the custom field name you define below."
 msgstr ""
-"Se desideri aggiungere una metadescrizione personalizzata ai tuoi post, "
-"utilizza i campi personalizzati. Abilita questa opzione per visualizzare le "
-"descrizioni nelle pagine dei post. Puoi aggiungere una metadescrizione "
-"utilizzando i campi personalizzati al di fuori del campo personalizzato nome "
-"che definisci qui di seguito."
+"Se desideri aggiungere una meta description personalizzata ai tuoi post, "
+"utilizza i campi personalizzati. Questa opzione deve essere abilitata per "
+"visualizzare le descrizioni nelle pagine dei post. Puoi aggiungere le tue "
+"meta description   utilizzando i campi personalizzati basati sul nome del "
+"campo personalizzato definito qui sotto."
 
 #: ../epanel/options_divi.php:650
 msgid "Enable custom keywords"
@@ -1915,11 +1912,11 @@ msgid ""
 "post pages. You can add your meta keywords using custom fields based off the "
 "custom field name you define below."
 msgstr ""
-"Se desideri aggiungere meta parole chiave al tuo post, utilizza i campi "
-"personalizzati. Abilita questa opzione per visualizzare le parole chiave "
-"nelle pagine dei post. Puoi aggiungere le tue meta parole chiave utilizzando "
-"i campi personalizzati al di fuori del campo personalizzato nome che "
-"definisci qui di seguito."
+"Se desideri aggiungere meta keywords al tuo post, utilizza i campi "
+"personalizzati. Questa opzione deve essere abilitata per visualizzare le "
+"parole chiave nelle pagine dei post. Puoi aggiungere le tue meta keywords "
+"utilizzando i campi personalizzati basati sul nome del campo personalizzato "
+"che definisci qui di seguito."
 
 #: ../epanel/options_divi.php:657
 msgid "Enable canonical URL's"
@@ -1927,7 +1924,7 @@ msgstr "Abilita URL's canonici"
 
 #: ../epanel/options_divi.php:666
 msgid "Custom field Name to be used for title"
-msgstr "Campo personalizzato Nome utilizzato per il titolo"
+msgstr "Nome Campo personalizzato utilizzato per il titolo"
 
 #: ../epanel/options_divi.php:670
 msgid ""
@@ -1936,8 +1933,8 @@ msgid ""
 "title you would like to use."
 msgstr ""
 "Quando definisci il titolo utilizzando i campi personalizzati, devi poi "
-"utilizzare questo valore per il campo personalizzato Nome. Il Valore del tuo "
-"campo personalizzato deve essere il titolo che desideri utilizzare."
+"utilizzare questo valore per il nome del campo personalizzato. Il Valore del "
+"tuo campo personalizzato deve essere il titolo che desideri utilizzare."
 
 #: ../epanel/options_divi.php:674
 msgid "Custom field Name to be used for description"
@@ -1949,14 +1946,14 @@ msgid ""
 "this value for the custom field Name. The Value of your custom field should "
 "be the custom description you would like to use."
 msgstr ""
-"Quando definisci la tua metadescrizione utilizzando i campi personalizzati, "
-"devi poi utilizzare questo valore per il campo personalizzato Nome. Il "
+"Quando definisci la tua meta description utilizzando i campi personalizzati, "
+"devi poi utilizzare questo valore per il nome del campo personalizzato Il "
 "Valore del tuo campo personalizzato deve essere la descrizione "
 "personalizzata che desideri utilizzare."
 
 #: ../epanel/options_divi.php:682
 msgid "Custom field Name to be used for keywords"
-msgstr "Campo personalizzato Nome utilizzato per le parole chiave"
+msgstr "Nome del campo personalizzato utilizzato per le parole chiave"
 
 #: ../epanel/options_divi.php:686
 msgid ""
@@ -1965,7 +1962,7 @@ msgid ""
 "keywords you would like to use, separated by comas."
 msgstr ""
 "Quando definisci le tue parole chiave utilizzando i campi personalizzati, "
-"devi poi utilizzare questo valore per il campo personalizzato Nome. Il "
+"devi poi utilizzare questo valore per il nome del campo personalizzato.  Il "
 "Valore del tuo campo personalizzato devono essere le meta parole chiave che "
 "desideri utilizzare, separate da virgole."
 
@@ -1983,7 +1980,7 @@ msgstr ""
 
 #: ../epanel/options_divi.php:719
 msgid "Enable meta descriptions"
-msgstr "Abilita metadescrizioni"
+msgstr "Abilita meta descriptions"
 
 #: ../epanel/options_divi.php:723
 msgid ""
@@ -1991,14 +1988,13 @@ msgid ""
 "pages. The description is based off the category description you choose when "
 "creating/edit your category in wp-admin."
 msgstr ""
-"Spunta questo riquadro se vuoi visualizzare le metadescrizioni nelle pagine "
-"categoria/archivio. La descrizione è basata al di fuori della descrizione "
-"categoria che scegli al momento della creazione/modifica della tua categoria "
-"in wp-admin."
+"Spunta questa casella se vuoi visualizzare le meta descriiption nelle pagine "
+"categoria/archivio. La descrizione è basata sulla descrizione categoria che "
+"scegli al momento della creazione/modifica della tua categoria in wp-admin."
 
 #: ../epanel/options_divi.php:728
 msgid "Choose title autogeneration method"
-msgstr "Scegli il metodo della generazione automatica"
+msgstr "Scegli il metodo di generazione automatica del titolo"
 
 #: ../epanel/options_divi.php:733
 msgid ""
@@ -2006,73 +2002,74 @@ msgid ""
 "change which order your blog name and index title are displayed, or you can "
 "remove the blog name from the title completely."
 msgstr ""
-"Puoi scegliere qui come saranno generati i tuoi titoli nelle pagine "
-"iniziali. Puoi modificare qui in quale ordine visualizzare il nome del blog "
-"e il titolo della pagina iniziale, oppure puoi rimuovere completamente il "
-"nome del blog dal titolo."
+"Qui puoi scegliere come saranno generati i tuoi titoli nelle pagine "
+"iniziali. Puoi modificare in quale ordine visualizzare il nome del blog e il "
+"titolo della pagina iniziale, oppure puoi rimuovere completamente il nome "
+"del blog dal titolo."
 
 #: ../epanel/options_divi.php:740
 msgid ""
 "Here you can change which character separates your blog title and index page "
 "name when using autogenerated post titles. Common values are | or -"
 msgstr ""
-"Puoi cambiare qui quale carattere separerà il titolo del blog e il nome "
+"Qui puoi cambiare quale carattere separerà il titolo del blog e il nome "
 "della pagina iniziale in caso di titoli di post generati automaticamente. "
 "Valori comuni sono | o -"
 
 #: ../epanel/options_divi.php:761
 msgid "Code Integration"
-msgstr "Codice integrazione"
+msgstr "Integrazione Codice"
 
 #: ../epanel/options_divi.php:769
 msgid "Enable header code"
-msgstr "Abilita codice intestazione"
+msgstr "Abilita codice nell' header"
 
 #: ../epanel/options_divi.php:773
 msgid ""
 "Disabling this option will remove the header code below from your blog. This "
 "allows you to remove the code while saving it for later use."
 msgstr ""
-"Disabilitando questa opzione rimuoverai il codice intestazione dal tuo blog. "
-"Se rimuovi il codice puoi comunque salvarlo e utilizzarlo più tardi."
+"Disabilitando questa opzione rimuoverai il codice nell' header dal tuo blog. "
+"Questo permette di rimuovere il codice salvandolo per un utilizzo futuro."
 
 #: ../epanel/options_divi.php:776
 msgid "Enable body code"
-msgstr "Abilita codice < body >"
+msgstr "Abilita codice nel body"
 
 #: ../epanel/options_divi.php:780
 msgid ""
 "Disabling this option will remove the body code below from your blog. This "
 "allows you to remove the code while saving it for later use."
 msgstr ""
-"Disabilitando questa opzione rimuoverai il codice corpo sottostante dal tuo "
-"blog. Se rimuovi il codice puoi comunque salvarlo e utilizzarlo più tardi."
+"Disabilitando questa opzione rimuoverai il codice sottostante nel body dal "
+"tuo blog. Questo permette di rimuovere il codice salvandolo per un utilizzo "
+"futuro."
 
 #: ../epanel/options_divi.php:785
 msgid "Enable single top code"
-msgstr "Abilita codice superiore singolo"
+msgstr "Abilita codice all'inizio dei post"
 
 #: ../epanel/options_divi.php:789
 msgid ""
 "Disabling this option will remove the single top code below from your blog. "
 "This allows you to remove the code while saving it for later use."
 msgstr ""
-"Disabilitando questa opzione rimuoverai il codice superiore singolo qui di "
-"seguito dal tuo blog. Se rimuovi il codice puoi comunque salvarlo e "
-"utilizzarlo più tardi."
+"Disabilitando questa opzione rimuoverai il codice sottostante dall' inizio "
+"dei tu cima dei tuoi post. Questo permette di rimuovere il codice salvandolo "
+"per un utilizzo futuro."
 
 #: ../epanel/options_divi.php:792
 msgid "Enable single bottom code"
-msgstr "Abilita codice inferiore singolo"
+msgstr "Abilita codice alla fine ai post"
 
 #: ../epanel/options_divi.php:796
 msgid ""
 "Disabling this option will remove the single bottom code below from your "
 "blog. This allows you to remove the code while saving it for later use."
 msgstr ""
-"Disabilitando questa opzione rimuoverai il codice inferiore singolo qui di "
-"seguito dal tuo blog. Se rimuovi il codice puoi comunque salvarlo e "
-"utilizzarlo più tardi."
+"Disabilitando questa opzione rimuoverai il codice sottostante dalla fine dei "
+"tuoi post. Questo permette di rimuovere il codice salvandolo per un utilizzo "
+"futuro. "
 
 #: ../epanel/options_divi.php:801
 msgid "Add code to the < head > of your blog"
@@ -2084,9 +2081,9 @@ msgid ""
 "your blog. This is useful when you need to add javascript or css to all "
 "pages."
 msgstr ""
-"Il codice che indicherai qui apparirà nella sezione intestazione di ogni "
-"pagina del tuo blog. Questo è utile se è necessario aggiungere Javascript o "
-"CSS a tutte le pagine."
+"Il codice che indicherai qui apparirà nella sezione head  di ogni pagina del "
+"tuo blog. Questo è utile se è necessario aggiungere Javascript o CSS in "
+"tutte le pagine."
 
 #: ../epanel/options_divi.php:808
 msgid ""
@@ -2101,8 +2098,8 @@ msgid ""
 "blog. This is usefull if you need to input a tracking pixel for a state "
 "counter such as Google Analytics."
 msgstr ""
-"Il codice che indicherai qui apparirà nella sezione corpo di ogni pagina del "
-"tuo blog. Questo è utile se è necessario inserire pixel di monitoraggio per "
+"Il codice che indicherai qui apparirà nella sezione body di ogni pagina del "
+"tuo blog. Questo è utile se è necessario inserire codice di monitoraggio per "
 "i servizi di statistica come Google Analytics."
 
 #: ../epanel/options_divi.php:815
@@ -2124,11 +2121,11 @@ msgstr "Aggiungi codice alla parte inferiore dei tuoi post, prima dei commenti"
 
 #: ../epanel/options_divi.php:870
 msgid "Manage Un-widgetized Advertisements"
-msgstr "Gestisci annunci"
+msgstr "Gestisci annunci fuori dai widget"
 
 #: ../epanel/options_divi.php:878
 msgid "Enable Single Post 468x60 banner"
-msgstr "Abilita banner 468x60 post singolo"
+msgstr "Abilita banner 468x60 nel post singolo"
 
 #: ../epanel/options_divi.php:882
 msgid ""
@@ -2136,9 +2133,9 @@ msgid ""
 "post pages below the single post content. If enabled you must fill in the "
 "banner image and destination url below."
 msgstr ""
-"Abilitando questa opzione visualizzi un banner 468x60 nella parte inferiore "
-"delle pagine dei post, sotto il contenuto dei singoli post.  Se abilitato "
-"devi completare l'immagine banner e l'URL di destinazione qui di seguito."
+"Abilitando questa opzione visualizzi  un banner 468x60 in basso dopo la fine "
+"del contenuto nella pagina dei post singoli.  Se abilitato devi indicare qui "
+"sotto l'immagine banner da usare e l'URL di destinazione."
 
 #: ../epanel/options_divi.php:887
 msgid "Input 468x60 advertisement banner image"
@@ -2170,7 +2167,7 @@ msgstr "Tweet"
 
 #: ../epanel/shortcodes/shortcodes.php:289
 msgid "Member Login"
-msgstr "Accesso membro"
+msgstr "Accesso utente"
 
 #: ../epanel/shortcodes/shortcodes.php:292
 msgid "Username: "
@@ -2182,7 +2179,7 @@ msgstr "Password: "
 
 #: ../epanel/shortcodes/shortcodes.php:330
 msgid "Add a Tooltip Text"
-msgstr "Aggiungi testo descrizione comando"
+msgstr "Aggiungi un suggerimento"
 
 #: ../epanel/shortcodes/shortcodes.php:352
 msgid "Click here to learn more"
@@ -2194,19 +2191,19 @@ msgstr "Registrati Ora"
 
 #: ../epanel/shortcodes/shortcodes.php:967
 msgid "Add ET Learn more block"
-msgstr "Aggiungi un Blocco Toggle"
+msgstr "Aggiungi un ET Toggle apri/chiudi"
 
 #: ../epanel/shortcodes/shortcodes.php:968
 msgid "Add ET Box"
-msgstr "Aggiungi una casella"
+msgstr "Aggiungi un ET BOX"
 
 #: ../epanel/shortcodes/shortcodes.php:969
 msgid "Add ET Button"
-msgstr "Aggiungi Pulsante"
+msgstr "Aggiungi un ET Pulsante"
 
 #: ../epanel/shortcodes/shortcodes.php:970
 msgid "Add ET Tabs"
-msgstr "Aggiungi Schede"
+msgstr "Aggiungi ET TAB"
 
 #: ../epanel/shortcodes/shortcodes.php:971
 msgid "Add Author Bio"
@@ -2214,7 +2211,7 @@ msgstr "Aggiungi Biografia dell'Autore"
 
 #: ../epanel/shortcodes/shortcodes.php:972
 msgid "Shortcodes"
-msgstr "Codici Brevi"
+msgstr "Shortcodes"
 
 #: ../epanel/shortcodes/shortcodes.php:977
 msgid "Caption"
@@ -2282,7 +2279,7 @@ msgstr "Contenuto del testo o HTML"
 
 #: ../epanel/shortcodes/shortcodes.php:1001
 msgid "Type of the box"
-msgstr "Tipologia del riquadro"
+msgstr "Tipologia del BOX "
 
 #: ../epanel/shortcodes/shortcodes.php:1015
 msgid "Link"
@@ -2316,24 +2313,23 @@ msgstr "Icona"
 
 #: ../epanel/shortcodes/shortcodes.php:1043
 msgid "Used for icon button type"
-msgstr "Utilizzato per la tipologia del pulsante icona"
+msgstr "Usata per l'icona secondo il tipo di pulsante"
 
 #: ../epanel/shortcodes/shortcodes.php:1048
 msgid "Open link in new window"
-msgstr "Apri collegamento in una nuova finestra"
+msgstr "Apri link in una nuova finestra"
 
 #: ../epanel/shortcodes/shortcodes.php:1050
 msgid "Select yes if the link should be opened in a new window"
-msgstr ""
-"Seleziona \"sì\" se vuoi che i collegamenti si aprano in una nuova finestra"
+msgstr "Seleziona \"sì\" se vuoi che i link si aprano in una nuova finestra"
 
 #: ../epanel/shortcodes/shortcodes.php:1058
 msgid "Slider Type"
-msgstr "Tipologia di indicatori scorrevoli"
+msgstr "Tipologia Slider"
 
 #: ../epanel/shortcodes/shortcodes.php:1060
 msgid "Select Slider Type here"
-msgstr "Seleziona qui la tipologia di indicatori scorrevoli"
+msgstr "Seleziona qui la tipologia dello slider"
 
 #: ../epanel/shortcodes/shortcodes.php:1065
 msgid "Effect"
@@ -2349,8 +2345,7 @@ msgstr "Automatico"
 
 #: ../epanel/shortcodes/shortcodes.php:1074
 msgid "Choose yes if you want for automatic slider animation"
-msgstr ""
-"Scegli \"sì\" se vuoi abilitare l'animazione automatica dello scorrimento"
+msgstr "Scegli \"sì\" se vuoi abilitare l'animazione automatica dello slider"
 
 #: ../epanel/shortcodes/shortcodes.php:1079
 msgid "Auto Speed"
@@ -2359,22 +2354,21 @@ msgstr "Velocità automatica"
 #: ../epanel/shortcodes/shortcodes.php:1081
 msgid "Automattic slider speed (works only if Auto is set to yes)"
 msgstr ""
-"Velocità di scorrimento automatica (solo se hai selezionato \"sì\" su "
+"Velocità automatica dello slider  (solo se hai selezionato \"sì\" su "
 "Automatico)"
 
 #: ../epanel/shortcodes/shortcodes.php:1085
 msgid "Tab Text"
-msgstr "Testo scheda"
+msgstr "Testo intestazione tab"
 
 #: ../epanel/shortcodes/shortcodes.php:1092
 msgid "Tab Content"
-msgstr "Contenuto scheda"
+msgstr "Contenuto scheda tab"
 
 #: ../epanel/shortcodes/shortcodes.php:1094
 msgid "Paste image url here, if you chose \"images\" slider type"
 msgstr ""
-"Incolla l'URL dell'immagine qui se scegli \"images\" come tipologia di "
-"indicatori di scorrimento"
+"Incolla l'URL dell'immagine qui se scegli \"images\" come tipologia di slider"
 
 #: ../epanel/shortcodes/shortcodes.php:1102
 msgid "Image Url"
@@ -2390,7 +2384,7 @@ msgstr "Utilizza ridimensiona"
 
 #: ../epanel/shortcodes/shortcodes.php:1185
 msgid "+ Add One More Tab"
-msgstr "+ Aggiunge una scheda"
+msgstr "+ Aggiunge una scheda tab"
 
 #: ../epanel/shortcodes/shortcodes.php:1335
 msgid "Image Height"
@@ -2461,7 +2455,7 @@ msgid ""
 "Note: Naming your widget area \"sidebar 1\", \"sidebar 2\", \"sidebar 3\", "
 "\"sidebar 4\" or \"sidebar 5\" will cause conflicts with this theme"
 msgstr ""
-"Nota: Chiamare la tua are widget \"sidebar 1\", \"sidebar 2\", \"sidebar "
+"Nota: Chiamare la tua aree widget \"sidebar 1\", \"sidebar 2\", \"sidebar "
 "3\", \"sidebar 4\" or \"sidebar 5\" causerà conflitti con questa tema"
 
 #: ../et-pagebuilder/et-pagebuilder.php:124
@@ -2489,7 +2483,7 @@ msgstr ""
 
 #: ../et-pagebuilder/et-pagebuilder.php:238
 msgid "Replace the existing content with loaded layout"
-msgstr "Sostituisci il contenuto esistente con il nuovo layout"
+msgstr "Sostituisce il contenuto esistente con il layout caricato"
 
 #: ../et-pagebuilder/et-pagebuilder.php:256
 msgid "Saved Layouts:"
@@ -2511,8 +2505,8 @@ msgstr "La sezione deve avere almeno una riga."
 #: ../et-pagebuilder/et-pagebuilder.php:389
 msgid "Fullwidth module can't be used outside of the Fullwidth Section."
 msgstr ""
-"Il modulo larghezza estesa non può essere utilizzato al di fuori della "
-"sezione a larghezza estesa."
+"Il modulo larghezza piena non può essere utilizzato al di fuori della "
+"sezione a larghezza piena."
 
 #: ../et-pagebuilder/et-pagebuilder.php:390
 msgid "3 column row can't be used in this column."
@@ -2531,16 +2525,16 @@ msgid ""
 "Still images cannot be generated from this video service and/or this video "
 "format"
 msgstr ""
-"Questo servizio video e/o questo formato di video non supportano fermo "
-"immagine"
+"Fermi immagine non possono essere generati da questo servizio video e/o "
+"formato video."
 
 #: ../et-pagebuilder/et-pagebuilder.php:394
 msgid "Geocode was not successful for the following reason"
-msgstr "Il Geocode non riuscito per il seguente motivo"
+msgstr "Geocode non riuscito per il seguente motivo"
 
 #: ../et-pagebuilder/et-pagebuilder.php:395
 msgid "Geocoder failed due to"
-msgstr "Il Geocodificatore ha riscontrato un problema dovuto a"
+msgstr "Geocodificatore ha riscontrato un problema dovuto a"
 
 #: ../et-pagebuilder/et-pagebuilder.php:396
 msgid "No results found"
@@ -2649,7 +2643,7 @@ msgstr "Portfolio a Larghezza Piena"
 
 #: ../et-pagebuilder/et-pagebuilder.php:421
 msgid "Toggle"
-msgstr "Cambia"
+msgstr "Toggle"
 
 #: ../et-pagebuilder/et-pagebuilder.php:422
 msgid "Contact Form"
@@ -2678,7 +2672,7 @@ msgstr "Negozio"
 
 #: ../et-pagebuilder/et-pagebuilder.php:428
 msgid "Countdown Timer"
-msgstr "Time per Conto alla Rovescia"
+msgstr "Timer per Conto alla Rovescia"
 
 #: ../et-pagebuilder/et-pagebuilder.php:429
 msgid "Map"
@@ -2690,7 +2684,7 @@ msgstr "Map a Larghezza Piena"
 
 #: ../et-pagebuilder/et-pagebuilder.php:431
 msgid "Social Media Follow"
-msgstr "Follow Social Media"
+msgstr "Segui Social Media"
 
 #: ../et-pagebuilder/et-pagebuilder.php:445
 msgid "Page Builder"
@@ -2765,7 +2759,7 @@ msgstr "Elimina Modulo"
 #: ../et-pagebuilder/et-pagebuilder.php:568
 #: ../et-pagebuilder/et-pagebuilder.php:2314
 msgid "Close modal window"
-msgstr "Chiudi finestra del modulo"
+msgstr "Chiudi finestra modulo"
 
 #: ../et-pagebuilder/et-pagebuilder.php:576
 #: ../et-pagebuilder/et-pagebuilder.php:2320
@@ -2817,7 +2811,7 @@ msgid ""
 "If defined, this image will be used as the background for this module. To "
 "remove a background image, simply delete the URL from the settings field."
 msgstr ""
-"Se scelta, questa immagine sarà usata come sfondo di questo modulo. Per "
+"Se definita, questa immagine sarà usata come sfondo di questo modulo. Per "
 "rimuovere un'immagine di sfondo, basta eliminare l'URL dal campo delle "
 "impostazioni"
 
@@ -3005,7 +2999,7 @@ msgid ""
 msgstr ""
 "Qui puoi selezionare se la tua sezione deve avere o meno un'ombra interna. "
 "Può essere un fantastico effetto se hai degli sfondi colorati o delle "
-"imomagini di sfond"
+"immagini di sfondo"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1047
 #: ../et-pagebuilder/et-pagebuilder.php:2589
@@ -3300,14 +3294,14 @@ msgstr ""
 
 #: ../et-pagebuilder/et-pagebuilder.php:1239
 msgid "Link URL"
-msgstr "Collegamento URL"
+msgstr "Link URL"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1247
 msgid ""
 "If you would like your image to be a link, input your destination URL here. "
 "No link will be created if this field is left blank."
 msgstr ""
-"Se vuoi che la tua immagine sia un collegamento, inserisci qui l'URL di "
+"Se vuoi che la tua immagine sia un link, inserisci qui l'URL di "
 "destinazione. Se questo campo viene lasciato vuoto non sarà creato nessun "
 "collegamento"
 
@@ -3336,8 +3330,7 @@ msgstr "In Una Nuova Scheda"
 #: ../et-pagebuilder/et-pagebuilder.php:9623
 msgid "Here you can choose whether or not your link opens in a new window"
 msgstr ""
-"Qui puoi scegliere se il tuo collegamento viene aperto o meno in una nuova "
-"finestra"
+"Qui puoi scegliere se il tuo link viene aperto o meno in una nuova finestra"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1284
 #: ../et-pagebuilder/et-pagebuilder.php:4308
@@ -3526,27 +3519,27 @@ msgstr ""
 #: ../et-pagebuilder/et-pagebuilder.php:6569
 #: ../et-pagebuilder/et-pagebuilder.php:6815
 msgid "Pagination"
-msgstr "Impaginazione"
+msgstr "Paginazione"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1519
 #: ../et-pagebuilder/et-pagebuilder.php:6313
 #: ../et-pagebuilder/et-pagebuilder.php:6576
 #: ../et-pagebuilder/et-pagebuilder.php:6822
 msgid "Show Pagination"
-msgstr "Mostra Impaginazione"
+msgstr "Mostra Paginazione"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1524
 #: ../et-pagebuilder/et-pagebuilder.php:6318
 #: ../et-pagebuilder/et-pagebuilder.php:6581
 #: ../et-pagebuilder/et-pagebuilder.php:6827
 msgid "Don't Show Pagination"
-msgstr "Non Mostrare Impaginazione"
+msgstr "Non Mostrare Paginazione"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1531
 #: ../et-pagebuilder/et-pagebuilder.php:6588
 #: ../et-pagebuilder/et-pagebuilder.php:6834
 msgid "Enable or disable pagination for this feed."
-msgstr "Attiva o disattiva l'impaginazione per questo feed"
+msgstr "Attiva o disattiva la paginazione per questo feed"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1559
 #: ../et-pagebuilder/et-pagebuilder.php:3723
@@ -3625,7 +3618,7 @@ msgstr ""
 #: ../et-pagebuilder/et-pagebuilder.php:1688
 #: ../et-pagebuilder/et-pagebuilder.php:2064
 msgid "Image Overlay URL"
-msgstr "URL per l'Overlay dell'Immagine"
+msgstr "URL dell' Immagine per Overlay"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1709
 #: ../et-pagebuilder/et-pagebuilder.php:2085
@@ -3652,7 +3645,7 @@ msgstr "Aggiungi Nuovo Video"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1794
 msgid "Display Image Overlays on Main Video"
-msgstr "Mostra Overlay dell'Immagine sul Video Principale"
+msgstr "Mostra l'immagine in Overlay (sovrapposta) sul Video Principale"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1801
 msgid "Hide"
@@ -3667,7 +3660,7 @@ msgid ""
 "This option will cover the player UI on the main video. This image can "
 "either be uploaded in each video setting or auto-generated by Divi."
 msgstr ""
-"Questa opzione coprirà l'interfaccia del player sul video principale. Questa "
+"Questa opzione coprirà l'interfaccia del player nel video principale. Questa "
 "immagine può essere caricata in ogni impostazione video o autogenerata da "
 "Divi"
 
@@ -3700,7 +3693,7 @@ msgstr "Controlli Slider"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1857
 msgid "Use Thumbnail Track"
-msgstr "Usa Visualizzazione Miniature"
+msgstr "Usa Miniature per controllo"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1862
 msgid "Use Dot Navigation"
@@ -3711,9 +3704,8 @@ msgid ""
 "This setting will let you choose to use the thumbnail track controls below "
 "the slider or dot navigation at the bottom of the slider."
 msgstr ""
-"Questa impostazione ti permette di scegliere se usare i controlli per la "
-"visualizzazione miniature sotto lo slider o la navigazione a puntini sotto "
-"lo slider"
+"Questa impostazione permette di scegliere di usare miniature per i controlli "
+"di traccia sotto lo slider, o la navigazione a puntini sotto lo slider"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1878
 msgid "Slider Controls Color"
@@ -3747,8 +3739,8 @@ msgid ""
 "This will change the label of the video in the builder for easy "
 "identification."
 msgstr ""
-"Questo cambierà l'etichetta del video nel creatore per una facile "
-"ideentificazion"
+"Questo cambierà l'etichetta del video nel builder per una facile "
+"identificazione"
 
 #: ../et-pagebuilder/et-pagebuilder.php:2099
 msgid "Slider Arrows Color"
@@ -3758,7 +3750,7 @@ msgstr "Colore Frecce Slider"
 msgid ""
 "This setting will make your slider arrows either light or dark in color."
 msgstr ""
-"Questa impostazione rende il colore delle frecce dello slider chiaro o scuro"
+"Questa impostazione cambia il colore delle frecce dello slider chiaro o scuro"
 
 #: ../et-pagebuilder/et-pagebuilder.php:2129
 msgid "Text Module Settings"
@@ -3946,13 +3938,13 @@ msgstr "Animazione Automatica"
 #: ../et-pagebuilder/et-pagebuilder.php:2796
 #: ../et-pagebuilder/et-pagebuilder.php:7112
 msgid "Disabled"
-msgstr "Disattivo"
+msgstr "Disabilitato"
 
 #: ../et-pagebuilder/et-pagebuilder.php:2556
 #: ../et-pagebuilder/et-pagebuilder.php:2801
 #: ../et-pagebuilder/et-pagebuilder.php:7117
 msgid "Enabled"
-msgstr "Attivo"
+msgstr "Abilitato"
 
 #: ../et-pagebuilder/et-pagebuilder.php:2563
 #: ../et-pagebuilder/et-pagebuilder.php:2808
@@ -3961,9 +3953,9 @@ msgid ""
 "having to click the next button, enable this option and then adjust the "
 "rotation speed below if desired."
 msgstr ""
-"Se vuoi che le slide scorrino automaticamente, senza bisogno di cliccare il "
-"pulsante successivo, attiva questa opzione e se vuoi regola poi sotto la "
-"velocità di rotazione"
+"Se vuoi che le slide scorrino automaticamente, senza dover cliccare il "
+"pulsante successivo, attiva questa opzione e poi regola la velocità di "
+"scorrimento qui sotto"
 
 #: ../et-pagebuilder/et-pagebuilder.php:2572
 #: ../et-pagebuilder/et-pagebuilder.php:2817
@@ -3977,9 +3969,9 @@ msgid ""
 "'Automatic Animation' option is enabled above. The higher the number the "
 "longer the pause between each rotation."
 msgstr ""
-"Qui puoi decidere la velocità di dissolvenza dello slider tra una slide e "
-"l'altra, se l'opzione 'Animazione Automatica' qui sopra è attiva. Più è alto "
-"il valore maggiore sarà la pausa tra le rotazioni"
+"Qui puoi decidere la velocità con cui lo slider sfuma da una slide "
+"all'altra, se l'opzione 'Animazione Automatica' qui sopra è attiva. Più è "
+"alto il valore maggiore sarà la pausa tra le rotazioni"
 
 #: ../et-pagebuilder/et-pagebuilder.php:2608
 msgid ""
@@ -4090,7 +4082,7 @@ msgstr ""
 
 #: ../et-pagebuilder/et-pagebuilder.php:3110
 msgid "Slide Image Vertical Alignment"
-msgstr "lineamneto Verticale dell'Immagine della Slide"
+msgstr "Allineamento Verticale dell'Immagine della Slide"
 
 #: ../et-pagebuilder/et-pagebuilder.php:3122
 msgid "Bottom"
@@ -4115,7 +4107,7 @@ msgid ""
 "If defined, this video will appear to the left of your slide text. Enter "
 "youtube or vimeo page url, or leave blank for a text-only slide."
 msgstr ""
-"Se scelto, questo video apparirà alla sinistra del testo della slide. "
+"Se impostato, questo video apparirà alla sinistra del testo della slide. "
 "Inserisci l'URL della pagina di Youtube o Vimeo, o lascia vuoto per una "
 "slide con solo testo"
 
@@ -4148,8 +4140,7 @@ msgstr "Impostazioni Modulo Blurb"
 #: ../et-pagebuilder/et-pagebuilder.php:3357
 msgid "The title of your blurb will appear in bold below your blurb image."
 msgstr ""
-"Il titolo del tuo blurb apparirà in grassetto sotto l'immagine dello stesso "
-"blurb"
+"Il titolo del tuo blurb apparirà in grassetto sotto l'immagine blurb scelta"
 
 #: ../et-pagebuilder/et-pagebuilder.php:3366
 #: ../includes/widgets/widget-ads.php:182
@@ -4166,7 +4157,7 @@ msgstr "URL"
 #: ../et-pagebuilder/et-pagebuilder.php:3374
 msgid ""
 "If you would like to make your blurb a link, input your destination URL here."
-msgstr "se il tuo blurb è un collegamento, inserisci qui l'URL di destinazione"
+msgstr "se il tuo blurb è un link, inserisci qui l'URL di destinazione"
 
 #: ../et-pagebuilder/et-pagebuilder.php:3411
 msgid "Use Icon"
@@ -4414,11 +4405,11 @@ msgstr ""
 
 #: ../et-pagebuilder/et-pagebuilder.php:4554
 msgid "Close"
-msgstr "Chiudi"
+msgstr "Chiuso"
 
 #: ../et-pagebuilder/et-pagebuilder.php:4559
 msgid "Open"
-msgstr "Apri"
+msgstr "Aperto"
 
 #: ../et-pagebuilder/et-pagebuilder.php:4566
 msgid ""
@@ -4463,7 +4454,7 @@ msgstr "Aweber"
 
 #: ../et-pagebuilder/et-pagebuilder.php:4946
 msgid "Here you can choose a service provider."
-msgstr "Qui puoi scegliere un provider di servizio."
+msgstr "Qui puoi scegliere un fornitore per il servizio."
 
 #: ../et-pagebuilder/et-pagebuilder.php:4955
 msgid "Feed Title"
@@ -4486,7 +4477,7 @@ msgid ""
 "doesn't appear here, activate 'Regenerate MailChimp Lists' option in ePanel. "
 "Don't forget to disable it once the list has been regenerated."
 msgstr ""
-"Qui puoi scegliere la lista MailChimp alla quale aggiungere clienti. Se non "
+"Qui puoi scegliere la lista MailChimp alla quale aggiungere contatti. Se non "
 "vedi nessuna lista qui, assicurati di aver impostato la chiave API MailChimp "
 "in ePanel e di avere almeno una lista su un account MailChimp. Se hai "
 "aggiunto una nuova lista ma non appare qui, attiva l'opzione Rigenera Liste "
@@ -4505,7 +4496,7 @@ msgid ""
 "it doesn't appear here, activate 'Regenerate Aweber Lists' option in ePanel. "
 "Don't forget to disable it once the list has been regenerated."
 msgstr ""
-"Qui puoi scegliere la lista Aweber alla quale aggiungere clienti. Se non "
+"Qui puoi scegliere la lista Aweber alla quale aggiungere contatti. Se non "
 "vedi nessuna lista qui, assicurati di aver impostato bene Aweber in ePanel e "
 "di avere almeno una lista su un account Aweber. Se hai aggiunto una nuova "
 "lista ma non appare qui, attiva l'opzione Rigenera Liste Aweber in ePanel. "
@@ -4517,7 +4508,7 @@ msgstr "Scegli un titolo per la tua casella di registrazione"
 
 #: ../et-pagebuilder/et-pagebuilder.php:5073
 msgid "Here you can change the text used for the signup button."
-msgstr "Qui puoi cambiare il testo usato per la casella di registrazione"
+msgstr "Qui puoi cambiare il testo usato nel pulsante di registrazione"
 
 #: ../et-pagebuilder/et-pagebuilder.php:5218
 #: ../et-pagebuilder/et-pagebuilder.php:5485
@@ -4695,28 +4686,28 @@ msgid ""
 "If you would like to adjust the date format, input the appropriate PHP date "
 "format here."
 msgstr ""
-"Se vuoi regolare il formato della data, inserisci qui l'adeguato formato "
-"data PHP"
+"Se vuoi regolare il formato della data, inserisci qui l'appropriato codice "
+"PHP per il formato della data"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6138
 msgid "Featured Image"
-msgstr "Immagine Principale"
+msgstr "Immagine in Evidenza"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6145
 msgid "Show Featured Image"
-msgstr "Mostra Immagine Principale"
+msgstr "Mostra Immagine in evidenza"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6150
 msgid "Don't Show Featured Image"
-msgstr "Non mostrare Immagine Principale"
+msgstr "Non mostrare Immagine in evidenza"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6157
 msgid "This will turn thumbnails on and off."
-msgstr "Questo attiva e disattiva le anteprime"
+msgstr "Questo attiva e disattiva le miniature"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6173
 msgid "Show Excerpt"
-msgstr "Mostra Estratto"
+msgstr "Mostra riassunto"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6178
 msgid "Show Content"
@@ -4728,7 +4719,7 @@ msgid ""
 "Showing the excerpt will only display your excerpt text."
 msgstr ""
 "Mostrare l'intero contenuto non troncherà i tuoi articoli sulla pagina "
-"index. Se scegli estratto sarà mostrato solo un estratto del testo"
+"index. Se scegli riassunto sarà mostrato solo un estratto del testo"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6194
 msgid "Read More Button"
@@ -4739,8 +4730,7 @@ msgid ""
 "Here you can define whether to show \"read more\" link after the excerpts or "
 "not."
 msgstr ""
-"Qui puoi scegliere se mostrare il collegamento 'continua a leggere' dopo "
-"l'estratto"
+"Qui puoi scegliere se mostrare il link 'continua a leggere' dopo l'estratto"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6222
 msgid "Author"
@@ -4756,7 +4746,7 @@ msgstr "Non mostrare Autore"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6241
 msgid "Turn on or off the author link."
-msgstr "Attiva/Disattiva il collegamento all'autore"
+msgstr "Attiva/Disattiva il link all'autore"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6250
 #: ../et-pagebuilder/et-pagebuilder.php:7049
@@ -4793,19 +4783,19 @@ msgstr "Non mostrare Categorie"
 #: ../et-pagebuilder/et-pagebuilder.php:6560
 #: ../et-pagebuilder/et-pagebuilder.php:6806
 msgid "Turn the category links on or off."
-msgstr "Attiva/Disattiva i collegamenti alle categorie"
+msgstr "Attiva/Disattiva i link alle categorie"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6325
 msgid "Turn pagination on and off."
-msgstr "Attiva/Disattiva Impaginazione"
+msgstr "Attiva/Disattiva la Paginazione"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6334
 msgid "Offset Number"
-msgstr "Numero di Compensazione"
+msgstr "Numero Offset"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6342
 msgid "Choose how many posts you would like to offset by"
-msgstr "Scegli il numero di articoli per il quale vuoi compensare"
+msgstr "Scegli il numero di articoli visualizzati prima della paginazione "
 
 #: ../et-pagebuilder/et-pagebuilder.php:6432
 msgid "Portfolio Module Settings"
@@ -4844,7 +4834,7 @@ msgstr "Non mostrare Titolo"
 #: ../et-pagebuilder/et-pagebuilder.php:6778
 #: ../et-pagebuilder/et-pagebuilder.php:7040
 msgid "Turn project titles on or off."
-msgstr "ttiva/Disattiva i titolo del progetto"
+msgstr "Attiva/Disattiva i titolo del progetto"
 
 #: ../et-pagebuilder/et-pagebuilder.php:6678
 msgid "Filterable Portfolio Module Settings"
@@ -4871,8 +4861,8 @@ msgid ""
 "Control how many projects are displayed. Leave blank or use 0 to not limit "
 "the amount."
 msgstr ""
-"Controlla in numero di progetti mostrati. Lascia vuoto o seleziona 0 per un "
-"numero illimitato"
+"Controlla il numero di progetti visualizzati. Lascia vuoto o seleziona 0 per "
+"un numero illimitato"
 
 #: ../et-pagebuilder/et-pagebuilder.php:7068
 msgid "Turn the date display on or off."
@@ -4889,8 +4879,8 @@ msgid ""
 "enable this option and then adjust the rotation speed below if desired."
 msgstr ""
 "Se scegli l'opzione di layout carosello e desideri che il carosello scorra "
-"automaticamente, senza il bisogno di cliccare un pulsante, attiva questa "
-"opzione e regola se vuoi la velocità di rotazione qui sotto"
+"automaticamente, senza dover cliccare il pulsante successivo, attiva questa "
+"opzione e poi regola la velocità di animazione qui sotto"
 
 #: ../et-pagebuilder/et-pagebuilder.php:7133
 msgid "Automatic Carousel Rotation Speed (in ms)"
@@ -4902,7 +4892,7 @@ msgid ""
 "Rotation' option is enabled above. The higher the number the longer the "
 "pause between each rotation. (Ex. 1000 = 1 sec)"
 msgstr ""
-"Qui puoi decidere la velocità di rotazione del carosello, se l'opzione "
+"Qui puoi decidere la velocità di animazione del carosello, se l'opzione "
 "'Rotazione Automatica del Carosello' è attiva. Più alto è il valore, più "
 "lunga sarà la pausa tra le rotazioni. (Es. 1000 = 1 sec)"
 
@@ -5046,7 +5036,7 @@ msgid ""
 "If your pricing is subscription based, input the subscription payment cycle "
 "here."
 msgstr ""
-"Se i tuoi preddi si basano su abbonamenti, inserisci qui il periodo valido "
+"Se i tuoi prezzi si basano su abbonamenti, inserisci qui il periodo valido "
 "per il pagamento dell'abbonamento"
 
 #: ../et-pagebuilder/et-pagebuilder.php:7594
@@ -5301,8 +5291,8 @@ msgid ""
 "background is light, then your text should be set to dark."
 msgstr ""
 "Qui puoi scegliere se il tuo titolo deve essere chiaro o scuro. Se la slide "
-"ha uno sfondo scuro, il testo dovrebbe essere chiaro. Se lo sfondo à¨ "
-"chiaro, il testo dovrebbe essere scuro"
+"ha uno sfondo scuro, il testo dovrebbe essere chiaro, con uno sfondo chiaro, "
+"il testo dovrebbe essere scuro"
 
 #: ../et-pagebuilder/et-pagebuilder.php:8943
 msgid "Sidebar Module Settings"
@@ -5329,8 +5319,8 @@ msgid ""
 "Select a widget-area that you would like to display. You can create new "
 "widget areas within the Appearances > Widgets tab."
 msgstr ""
-"Seleziona un'are widget che desideri mostrare. Puoi creare nuove aree widget "
-"nella scheda Aspetto > Widget"
+"Seleziona un'area widget che desideri mostrare. Puoi creare nuove aree "
+"widget nella scheda Aspetto > Widget"
 
 #: ../et-pagebuilder/et-pagebuilder.php:9089
 msgid "Fullwidth Header Module Settings"
@@ -5394,7 +5384,7 @@ msgstr ""
 
 #: ../et-pagebuilder/et-pagebuilder.php:9515
 msgid "Social Media Follow Settings"
-msgstr "mpostazioni Collegamenti Social Media"
+msgstr "Impostazioni link Social Media"
 
 #: ../et-pagebuilder/et-pagebuilder.php:9525
 msgid "Add Social Network"
@@ -5418,7 +5408,7 @@ msgstr "Quoi puoi scegliere la forma delle tue icone del social nerwork."
 
 #: ../et-pagebuilder/et-pagebuilder.php:9632
 msgid "Follow Button"
-msgstr "Pulsant Follow"
+msgstr "Pulsante Follow"
 
 #: ../et-pagebuilder/et-pagebuilder.php:9650
 msgid ""
@@ -5501,7 +5491,7 @@ msgstr "L'URL per questo link al social network"
 
 #: ../et-pagebuilder/et-pagebuilder.php:9862
 msgid "Reset Color"
-msgstr "Reimposta Colore"
+msgstr "Reset Colore"
 
 #: ../et-pagebuilder/et-pagebuilder.php:9867
 msgid "This will change the icon color."
@@ -5665,7 +5655,7 @@ msgstr "Pagine delle Vendite"
 
 #: ../et-pagebuilder/layouts/layouts.php:552
 msgid "Case Study"
-msgstr "Agenzia Creativa"
+msgstr "Caso di studio"
 
 #: ../et-pagebuilder/layouts/layouts.php:562
 msgid "Product Features"
@@ -5710,7 +5700,7 @@ msgstr "Rispondi"
 
 #: ../includes/functions/comments.php:30
 msgid "Your comment is awaiting moderation."
-msgstr "Il tuo commento è in moderazione."
+msgstr "Il tuo commento è in attesa di moderazione."
 
 #: ../includes/functions/installation.php:1
 msgid "Read Divi Documentation"
@@ -5723,7 +5713,7 @@ msgstr "Area a Piè di Pagina"
 
 #: ../includes/functions/tutorials.php:1
 msgid "Watch video tutorials"
-msgstr "Caratteristiche del Prodotto"
+msgstr "Guarda i video tutorial "
 
 #: ../includes/widgets/widget-about.php:4
 msgid "Displays About Me Information"
@@ -5731,7 +5721,7 @@ msgstr "Mostra le Informazioni Chi Sono"
 
 #: ../includes/widgets/widget-about.php:6
 msgid "ET About Me Widget"
-msgstr "Widget Chi Sono"
+msgstr "Widget ET Chi Sono"
 
 #: ../includes/widgets/widget-ads.php:4
 msgid "Displays Advertisements"
@@ -5739,7 +5729,7 @@ msgstr "Mostra Pubblicità"
 
 #: ../includes/widgets/widget-ads.php:6
 msgid "ET Advertisement"
-msgstr "Pubblicità"
+msgstr "ET Pubblicità"
 
 #: ../includes/widgets/widget-ads.php:12
 #: ../includes/widgets/widget-ads.php:128
@@ -5748,7 +5738,7 @@ msgstr "Pubblicità"
 
 #: ../includes/widgets/widget-ads.php:175
 msgid "Use Relative Image Paths"
-msgstr "Usa Percorsi Immagine Relativa"
+msgstr "Usa Percorsi Relativi per le immagini"
 
 #: ../includes/widgets/widget-ads.php:177
 msgid "Open in a new window"
@@ -5811,7 +5801,7 @@ msgstr "Mostra Pubblicità Adsense"
 
 #: ../includes/widgets/widget-adsense.php:6
 msgid "ET Adsense Widget"
-msgstr "Widget Adsense"
+msgstr "ET Widget Adsense"
 
 #: ../includes/widgets/widget-adsense.php:12
 #: ../includes/widgets/widget-adsense.php:40

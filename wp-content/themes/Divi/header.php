@@ -167,9 +167,9 @@
 						<form role="search" method="get" class="et-search-form et-hidden" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<?php
 							printf( '<input type="search" class="et-search-field" placeholder="%1$s" value="%2$s" name="s" title="%3$s" />',
-								esc_attr_x( 'Search &hellip;', 'placeholder', 'Divi' ),
+								esc_attr__( 'Search &hellip;', 'Divi' ),
 								get_search_query(),
-								esc_attr_x( 'Search for:', 'label', 'Divi' )
+								esc_attr__( 'Search for:', 'Divi' )
 							);
 						?>
 						</form>

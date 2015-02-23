@@ -2284,7 +2284,7 @@
 			});
 		}
 
-		et_duplicate_menu( $('#et-top-navigation ul.nav'), $('#et-top-navigation .mobile_nav'), 'mobile_menu0', 'et_mobile_menu' );
+		et_duplicate_menu( $('#et-top-navigation ul.nav'), $('#et-top-navigation .mobile_nav'), 'mobile_menu', 'et_mobile_menu' );
 
 		$('.et_pb_fullwidth_menu ul.nav').each(function(i) {
 			i++;
@@ -2295,7 +2295,7 @@
 			var this_menu = $( this ),
 				bg_color = this_menu.data( 'bg_color' );
 			if ( bg_color ) {
-				this_menu.find( 'ul ul' ).css( { 'background-color' : bg_color } );
+				this_menu.find( 'ul' ).css( { 'background-color' : bg_color } );
 			}
 		});
 

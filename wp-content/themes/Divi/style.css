@@ -1,7 +1,7 @@
 /*
 Theme Name: Divi
 Theme URI: http://www.elegantthemes.com/gallery/divi/
-Version: 2.3
+Version: 2.3.1
 Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
 Author: Elegant Themes
 Author URI: http://www.elegantthemes.com
@@ -817,8 +817,8 @@ body.woocommerce div.product .woocommerce-tabs .panel, body.woocommerce #content
 	.et_pb_fullwidth_menu .fullwidth-menu-nav > ul { padding: 28px 0 0 !important; line-height: 1.7em; }
 	.et_pb_fullwidth_menu .fullwidth-menu-nav > ul > li.mega-menu > ul { top: 80px; }
 		.et_pb_fullwidth_menu .fullwidth-menu-nav > ul ul { padding: 20px; text-align: left; }
-	.et_pb_bg_layout_dark .fullwidth-menu-nav ul li a { color: #fff; }
-	.et_pb_bg_layout_dark .fullwidth-menu-nav ul li a:hover { color: rgba(255,255,255,0.8); }
+	.et_pb_bg_layout_dark.et_pb_fullwidth_menu ul li a { color: #fff; }
+	.et_pb_bg_layout_dark.et_pb_fullwidth_menu ul li a:hover { color: rgba(255,255,255,0.8); }
 
 .et_pb_fullwidth_menu .fullwidth-menu-nav > ul.upwards { padding: 0 0 29px !important; }
 	.et_pb_fullwidth_menu .fullwidth-menu-nav > ul.upwards > li { padding-top: 28px; }

@@ -1,3 +1,30 @@
+version 2.3.1 ( updated 02-19-2015 )
+- Fixed some issues with Aweber functionality
+	* functions.php
+- Fixed the issue with "Search" text, not recognized in localization files
+	* header.php
+- Fixed the issue with secondary navigation items, not visible on mobile devices
+	* js/custom.js
+- Fullwidth Module: Fixed the issue with mobile menu background color
+	* js/custom.js
+	* style.css
+- Updated localization files
+	* lang/da_DK.mo
+	* lang/da_DK.po
+	* lang/fr_FR.mo
+	* lang/fr_FR.po
+	* lang/it_IT.mo
+	* lang/it_IT.po
+	* lang/nl_NL.mo
+	* lang/nl_NL.po
+- Improved compatibility with child themes, created before the previous version of the theme ( 2.3 )
+	* epanel/custom_functions.php
+- Renamed Portuguese localizaton files
+	* lang/pt_BR.mo
+	* lang/pt_BR.po
+- Bumped version number
+	* style.css
+
 version 2.3 ( updated 02-12-2015 )
 - The theme has been translated into the following languages:
 	* Arabic

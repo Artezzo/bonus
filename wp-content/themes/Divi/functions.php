@@ -3327,23 +3327,23 @@ function et_pb_get_aweber_account() {
 	$access_secret = et_get_option( 'divi_aweber_access_secret' );
 
 	if ( '' !== $consumer_key && '' !== $consumer_secret && '' !== $access_key && '' !== $access_secret ) {
-		return false;
-	}
+		try {
+			// Aweber requires curl extension to be enabled
+			if ( ! function_exists( 'curl_init' ) ) {
+				return false;
+			}
 
-	try {
-		// Aweber requires curl extension to be enabled
-		if ( ! function_exists( 'curl_init' ) ) {
+			$aweber = new AWeberAPI( $consumer_key, $consumer_secret );
+
+			if ( ! $aweber ) {
+				return false;
+			}
+
+			$account = $aweber->getAccount( $access_key, $access_secret );
+		} catch ( Exception $exc ) {
 			return false;
 		}
-
-		$aweber = new AWeberAPI( $consumer_key, $consumer_secret );
-
-		if ( ! $aweber ) {
-			return false;
-		}
-
-		$account = $aweber->getAccount( $access_key, $access_secret );
-	} catch ( Exception $exc ) {
+	} else {
 		return false;
 	}
 

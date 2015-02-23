@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Divi 1.0\n"
 "POT-Creation-Date: 2015-02-09 01:11+0300\n"
-"PO-Revision-Date: 2015-02-09 01:13+0300\n"
+"PO-Revision-Date: 2015-02-17 22:10+0300\n"
 "Last-Translator: \n"
 "Language-Team: Elegant Themes\n"
 "Language: da\n"
@@ -2532,7 +2532,7 @@ msgstr "Tekst"
 
 #: ../et-pagebuilder/et-pagebuilder.php:402
 msgid "Blurb"
-msgstr "Bagsidetekste"
+msgstr "Bagsidetekst"
 
 #: ../et-pagebuilder/et-pagebuilder.php:403
 msgid "Tabs"
@@ -3306,7 +3306,7 @@ msgstr "Højre til Venstre"
 #: ../et-pagebuilder/et-pagebuilder.php:3668
 #: ../et-pagebuilder/et-pagebuilder.php:4335
 msgid "Top To Bottom"
-msgstr "top til bund"
+msgstr "Top til bund"
 
 #: ../et-pagebuilder/et-pagebuilder.php:1306
 #: ../et-pagebuilder/et-pagebuilder.php:3683
@@ -3726,7 +3726,7 @@ msgstr ""
 #: ../et-pagebuilder/et-pagebuilder.php:9159
 #: ../et-pagebuilder/et-pagebuilder.php:9370
 msgid "Text Orientation"
-msgstr "tekstretning"
+msgstr "Tekstretning"
 
 #: ../et-pagebuilder/et-pagebuilder.php:2177
 #: ../et-pagebuilder/et-pagebuilder.php:3645
