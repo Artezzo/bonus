@@ -88,7 +88,7 @@ function et_pb_setup_theme(){
 add_action( 'after_setup_theme', 'et_pb_setup_theme' );
 
 function et_pb_before_main_editor( $post ) {
-	if ( ! in_array( $post->post_type, array( 'page', 'project' ) ) ) return;
+	if ( ! in_array( $post->post_type, array( 'page', 'project', 'logooo' ) ) ) return;
 
 	$is_builder_used = 'on' === get_post_meta( $post->ID, '_et_pb_use_builder', true ) ? true : false;
 
@@ -103,7 +103,7 @@ function et_pb_before_main_editor( $post ) {
 add_action( 'edit_form_after_title', 'et_pb_before_main_editor' );
 
 function et_pb_after_main_editor( $post ) {
-	if ( ! in_array( $post->post_type, array( 'page', 'project' ) ) ) return;
+	if ( ! in_array( $post->post_type, array( 'page', 'project', 'logooo' ) ) ) return;
 	echo '</div> <!-- #et_pb_main_editor_wrap -->';
 }
 add_action( 'edit_form_after_editor', 'et_pb_after_main_editor' );
@@ -136,6 +136,7 @@ function et_pb_admin_scripts_styles( $hook ) {
 	$post_types = apply_filters( 'et_pb_builder_post_types', array(
 		'page',
 		'project',
+		'logooo',
 	) );
 
 	/*
@@ -380,6 +381,7 @@ function et_pb_add_builder_page_js_css(){
 	wp_enqueue_script( 'et_pb_admin_date_js', ET_PB_URI . '/js/jquery-ui-1.10.4.custom.min.js', array( 'jquery' ), ET_PB_VERSION, true );
 	wp_enqueue_script( 'et_pb_admin_date_addon_js', ET_PB_URI . '/js/jquery-ui-timepicker-addon.js', array( 'et_pb_admin_date_js' ), ET_PB_VERSION, true );
 
+
 	wp_localize_script( 'et_pb_admin_js', 'et_pb_options', array(
 		'ajaxurl'                       => admin_url( 'admin-ajax.php' ),
 		'et_load_nonce'                 => wp_create_nonce( 'et_load_nonce' ),
@@ -438,6 +440,7 @@ function et_pb_add_custom_box() {
 	$post_types = apply_filters( 'et_pb_builder_post_types', array(
 		'page',
 		'project',
+		'logooo',
 	) );
 
 	foreach ( $post_types as $post_type ){
@@ -9895,6 +9898,296 @@ echo <<<END
 	</script>
 
 	<!-- end et_pb_social_media_follow -->
+
+	<!-- et_pb_gallery_logos -->
+
+
+	<script type="text/template" id="et-builder-et_pb_gallery_logos-module-template">
+		<h3 class="et-pb-settings-heading">Configurações dos logotipos</h3>
+
+		<div class="et-pb-main-settings">
+			
+			<div class="et-pb-option et-pb-option-main-content et-pb-option-advanced-module">
+				<label for="et_pb_content_new">Content: </label>
+
+				<div class="et-pb-option-container">
+					<div id="et_pb_content_new"><%= typeof( et_pb_content_new )!== 'undefined' ? et_pb_content_new : '' %></div>
+					<p class="description">Here you can define the content that will be placed within the current tab.</p>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_layout_logos">Modo de exibição: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_layout_logos" id="et_pb_layout_logos">
+						<option value="grid"<%= typeof( et_pb_layout_logos ) !== 'undefined' && 'grid' === et_pb_layout_logos ?  ' selected="selected"' : '' %>>Grid</option>
+						<option value="list"<%= typeof( et_pb_layout_logos ) !== 'undefined' && 'list' === et_pb_layout_logos ?  ' selected="selected"' : '' %>>Lista</option>
+						<option value="slider"<%= typeof( et_pb_layout_logos ) !== 'undefined' && 'slider' === et_pb_layout_logos ?  ' selected="selected"' : '' %>>Carousel</option>					
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_tooltip">Exibir titulo ao passar o mouse: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_tooltip" id="et_pb_tooltip">
+						<option value="enabled"<%= typeof( et_pb_tooltip) !== 'undefined' && 'enabled' === et_pb_tooltip ?  ' selected="selected"' : '' %>>Sim</option>
+						<option value="disabled"<%= typeof( et_pb_tooltip ) !== 'undefined' && 'disabled' === et_pb_tooltip ?  ' selected="selected"' : '' %>>Não</option>						
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_grayscale">Logos em preto e branco: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_grayscale" id="et_pb_grayscale">
+						<option value="enabled"<%= typeof( et_pb_grayscale) !== 'undefined' && 'enabled' === et_pb_grayscale ?  ' selected="selected"' : '' %>>Sim</option>
+						<option value="disabled"<%= typeof( et_pb_grayscale ) !== 'undefined' && 'disabled' === et_pb_grayscale ?  ' selected="selected"' : '' %>>Não</option>						
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_border">Bordas: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_border" id="et_pb_border">
+						<option value="enabled"<%= typeof( et_pb_border) !== 'undefined' && 'enabled' === et_pb_border ?  ' selected="selected"' : '' %>>Sim</option>
+						<option value="disabled"<%= typeof( et_pb_border ) !== 'undefined' && 'disabled' === et_pb_border ?  ' selected="selected"' : '' %>>Não</option>						
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+
+			<div class="et-pb-option">
+				<label for="et_pb_bordercolor">Cor da borda: </label>
+
+				<div class="et-pb-option-container">
+
+					<input id="et_pb_bordercolor" class="et-pb-color-picker-hex" type="text" maxlength="7" placeholder="Hex Value" value="<%= typeof( et_pb_bordercolor ) !== 'undefined' && et_pb_bordercolor !== '' ?  et_pb_bordercolor : '#ffffff' %>" />
+					<p class="description">Use the color picker to choose a background color for this module.</p>
+
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_columns">Números de colunas: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_columns" id="et_pb_columns">
+						<option value="1"<%= typeof( et_pb_columns ) !== 'undefined' && '1' === et_pb_columns ?  ' selected="selected"' : '' %>>1</option>
+						<option value="2"<%= typeof( et_pb_columns ) !== 'undefined' && '2' === et_pb_columns ?  ' selected="selected"' : '' %>>2</option>						
+						<option value="3"<%= typeof( et_pb_columns ) !== 'undefined' && '3' === et_pb_columns ?  ' selected="selected"' : '' %>>3</option>
+						<option value="4"<%= typeof( et_pb_columns ) !== 'undefined' && '4' === et_pb_columns ?  ' selected="selected"' : '' %>>4</option>
+						<option value="5"<%= typeof( et_pb_columns ) !== 'undefined' && '5' === et_pb_columns ?  ' selected="selected"' : '' %>>5</option>					
+						<option value="6"<%= typeof( et_pb_columns ) !== 'undefined' && '6' === et_pb_columns ?  ' selected="selected"' : '' %>>6</option>										
+						<option value="7"<%= typeof( et_pb_columns ) !== 'undefined' && '7' === et_pb_columns ?  ' selected="selected"' : '' %>>7</option>										
+						<option value="8"<%= typeof( et_pb_columns ) !== 'undefined' && '8' === et_pb_columns ?  ' selected="selected"' : '' %>>8</option>										
+						<option value="9"<%= typeof( et_pb_columns ) !== 'undefined' && '9' === et_pb_columns ?  ' selected="selected"' : '' %>>9</option>										
+						<option value="10"<%= typeof( et_pb_columns ) !== 'undefined' && '10' === et_pb_columns ?  ' selected="selected"' : '' %>>10</option>										
+						<option value="11"<%= typeof( et_pb_columns ) !== 'undefined' && '11' === et_pb_columns ?  ' selected="selected"' : '' %>>11</option>										
+						<option value="12"<%= typeof( et_pb_columns ) !== 'undefined' && '12' === et_pb_columns ?  ' selected="selected"' : '' %>>12</option>										
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_backgroundcolor">Cor de fundo: </label>
+
+				<div class="et-pb-option-container">
+
+					<input id="et_pb_backgroundcolor" class="et-pb-color-picker-hex" type="text" maxlength="7" placeholder="Hex Value" value="<%= typeof( et_pb_backgroundcolor ) !== 'undefined' && et_pb_backgroundcolor !== '' ?  et_pb_backgroundcolor : '#ffffff' %>" />
+					<p class="description">Use the color picker to choose a background color for this module.</p>
+
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_buttonsbordercolor">Cor das bordas dos botões: </label>
+
+				<div class="et-pb-option-container">
+
+					<input id="et_pb_buttonsbordercolor" class="et-pb-color-picker-hex" type="text" maxlength="7" placeholder="Hex Value" value="<%= typeof( et_pb_buttonsbordercolor ) !== 'undefined' && et_pb_buttonsbordercolor !== '' ?  et_pb_buttonsbordercolor : '#ffffff' %>" />
+					<p class="description">Use the color picker to choose a background color for this module.</p>
+
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			 <div class="et-pb-option">
+				<label for="et_pb_borderradius">Bordas arredondadas: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_borderradius" id="et_pb_borderradius">
+						<option value="logooos_small_radius"<%= typeof( et_pb_borderradius) !== 'undefined' && 'logooos_small_radius' === et_pb_borderradius ?  ' selected="selected"' : '' %>>Pequena</option>
+						<option value="logooos_medium_radius"<%= typeof( et_pb_borderradius) !== 'undefined' && 'logooos_medium_radius' === et_pb_borderradius ?  ' selected="selected"' : '' %>>Médio</option>
+						<option value="logooos_large_radius"<%= typeof( et_pb_borderradius) !== 'undefined' && 'logooos_large_radius' === et_pb_borderradius ?  ' selected="selected"' : '' %>>Grande</option>						
+						<option value="logooos_no_radius"<%= typeof( et_pb_borderradius ) !== 'undefined' && 'logooos_no_radius' === et_pb_borderradius ?  ' selected="selected"' : '' %>>Sem borda</option>						
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_buttonsbgcolor">Cor de fundo dos botões: </label>
+
+				<div class="et-pb-option-container">
+
+					<input id="et_pb_buttonsbgcolor" class="et-pb-color-picker-hex" type="text" maxlength="7" placeholder="Hex Value" value="<%= typeof( et_pb_buttonsbgcolor ) !== 'undefined' && et_pb_buttonsbgcolor !== '' ?  et_pb_buttonsbgcolor : '#ffffff' %>" />
+					<p class="description">Use the color picker to choose a background color for this module.</p>
+
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_buttonsarrowscolor">Estilo dos botões: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_buttonsarrowscolor" id="et_pb_buttonsarrowscolor">
+						<option value="darkgray"<%= typeof( et_pb_buttonsarrowscolor) !== 'undefined' && 'darkgray' === et_pb_buttonsarrowscolor ?  ' selected="selected"' : '' %>>Escuro</option>
+						<option value="lightgray"<%= typeof( et_pb_buttonsarrowscolor ) !== 'undefined' && 'lightgray' === et_pb_buttonsarrowscolor ?  ' selected="selected"' : '' %>>Claro</option>						
+						<option value="white"<%= typeof( et_pb_buttonsarrowscolor ) !== 'undefined' && 'white' === et_pb_buttonsarrowscolor ?  ' selected="selected"' : '' %>>Branco</option>						
+
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+           
+           <div class="et-pb-option">
+				<label for="et_pb_listborder">Ativar borda no modo lista: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_listborder" id="et_pb_listborder">
+						<option value="enabled"<%= typeof( et_pb_listborder ) !== 'undefined' && 'enabled' === et_pb_listborder ?  ' selected="selected"' : '' %>>Sim</option>
+						<option value="disabled"<%= typeof( et_pb_listborder ) !== 'undefined' && 'disabled' === et_pb_listborder ?  ' selected="selected"' : '' %>>Não</option>						
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_listborderstyle">Estilo da borda no modo lista: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_listborderstyle" id="et_pb_listborders">
+						<option value="dashed"<%= typeof( et_pb_listborderstyle ) !== 'undefined' && 'dashed' === et_pb_listborderstyle ?  ' selected="selected"' : '' %>>Pontilhado</option>
+						<option value="dotted"<%= typeof( et_pb_listborderstyle ) !== 'undefined' && 'dotted' === et_pb_listborderstyle ?  ' selected="selected"' : '' %>>Circulos</option>						
+					    <option value="solid"<%= typeof( et_pb_listborderstyle ) !== 'undefined' && 'solid' === et_pb_listborderstyle ?  ' selected="selected"' : '' %>>Solido</option>						
+
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_morelinktext">Texto do botão para mais informações: </label>
+
+				<div class="et-pb-option-container">
+					<input id="et_pb_morelinktext" type="text" class="regular-text" value="<%= typeof( et_pb_morelinktext ) !== 'undefined' ?  et_pb_morelinktext : '' %>" />
+					<p class="description">Enter optional CSS classes to be used for this module. A CSS class can be used to create custom CSS styling. You can add multiple classes, separated with a space.</p>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_listbordercolor">Cor da borda no modo lista: </label>
+
+				<div class="et-pb-option-container">
+
+					<input id="et_pb_listbordercolor" class="et-pb-color-picker-hex" type="text" maxlength="7" placeholder="Hex Value" value="<%= typeof( et_pb_listbordercolor ) !== 'undefined' && et_pb_listbordercolor !== '' ?  et_pb_listbordercolor : '#ffffff' %>" />
+					<p class="description">Use the color picker to choose a background color for this module.</p>
+
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_num">Quantidade de logos a exibir: </label>
+
+				<div class="et-pb-option-container">
+					<input id="et_pb_num" type="text" class="regular-text" value="<%= typeof( et_pb_num ) !== 'undefined' ?  et_pb_num : '' %>" />
+					<p class="description">Enter optional CSS classes to be used for this module. A CSS class can be used to create custom CSS styling. You can add multiple classes, separated with a space.</p>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_marginbetweenitems">Margem entre os logos: </label>
+
+				<div class="et-pb-option-container">
+					<input id="et_pb_marginbetweenitems" type="text" class="regular-text" value="<%= typeof( et_pb_marginbetweenitems ) !== 'undefined' ?  et_pb_marginbetweenitems : '' %>" />
+					<p class="description">Enter optional CSS classes to be used for this module. A CSS class can be used to create custom CSS styling. You can add multiple classes, separated with a space.</p>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+            
+            <div class="et-pb-option">
+				<label for="et_pb_hovereffect">Efeito ao passar o mouse: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_hovereffect" id="et_pb_hovereffect">
+						<option value="effect1"<%= typeof( et_pb_hovereffect) !== 'undefined' && 'effect1' === et_pb_hovereffect ?  ' selected="selected"' : '' %>>Efeito 01</option>
+						<option value="effect2"<%= typeof( et_pb_hovereffect) !== 'undefined' && 'effect2' === et_pb_hovereffect ?  ' selected="selected"' : '' %>>Efeito 02</option>
+						<option value="effect3"<%= typeof( et_pb_hovereffect) !== 'undefined' && 'effect3' === et_pb_hovereffect ?  ' selected="selected"' : '' %>>Efeito 03</option>
+						<option value=""<%= typeof( et_pb_hovereffect) !== 'undefined' && '' === et_pb_hovereffect ?  ' selected="selected"' : '' %>>Sem efeito</option>						
+						
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_buttonsbgcolor">Cor do efeito ao passar o mouse: </label>
+
+				<div class="et-pb-option-container">
+
+					<input id="et_pb_hovereffectcolor" class="et-pb-color-picker-hex" type="text" maxlength="7" placeholder="Hex Value" value="<%= typeof( et_pb_hovereffectcolor ) !== 'undefined' && et_pb_hovereffectcolor !== '' ?  et_pb_hovereffectcolor : '#ffffff' %>" />
+					<p class="description">Use the color picker to choose a background color for this module.</p>
+
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+            <div class="et-pb-option">
+				<label for="et_pb_autoplay">Auto executar: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_autoplay" id="et_pb_autoplay">
+						<option value="true"<%= typeof( et_pb_autoplay) !== 'undefined' && 'true' === et_pb_autoplay ?  ' selected="selected"' : '' %>>Sim</option>
+						<option value="false"<%= typeof( et_pb_autoplay ) !== 'undefined' && 'false' === et_pb_autoplay ?  ' selected="selected"' : '' %>>Não</option>						
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_scrollduration">Tempo de rotação dos logotipos: </label>
+
+				<div class="et-pb-option-container">
+					<input id="et_pb_scrollduration" type="text" class="regular-text" value="<%= typeof( et_pb_scrollduration ) !== 'undefined' ?  et_pb_scrollduration : '' %>" />
+					<p class="description">Enter optional CSS classes to be used for this module. A CSS class can be used to create custom CSS styling. You can add multiple classes, separated with a space.</p>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_pauseduration">Tempo de pausa dos logotipos: </label>
+
+				<div class="et-pb-option-container">
+					<input id="et_pb_pauseduration" type="text" class="regular-text" value="<%= typeof( et_pb_pauseduration ) !== 'undefined' ?  et_pb_scrollduration : '' %>" />
+					<p class="description">Enter optional CSS classes to be used for this module. A CSS class can be used to create custom CSS styling. You can add multiple classes, separated with a space.</p>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+            <div class="et-pb-option">
+				<label for="admin_label">Admin Label: </label>
+
+				<div class="et-pb-option-container">
+					<input id="admin_label" type="text" class="regular-text" value="<%= typeof( admin_label ) !== 'undefined' ?  admin_label : '' %>" />
+					<p class="description">This will change the label of the module in the builder for easy identification.</p>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_module_id">CSS ID: </label>
+
+				<div class="et-pb-option-container">
+					<input id="et_pb_module_id" type="text" class="regular-text" value="<%= typeof( et_pb_module_id ) !== 'undefined' ?  et_pb_module_id : '' %>" />
+					<p class="description">Enter an optional CSS ID to be used for this module. An ID can be used to create custom CSS styling, or to create links to particular sections of your page.</p>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_module_class">CSS Class: </label>
+
+				<div class="et-pb-option-container">
+					<input id="et_pb_module_class" type="text" class="regular-text" value="<%= typeof( et_pb_module_class ) !== 'undefined' ?  et_pb_module_class : '' %>" />
+					<p class="description">Enter optional CSS classes to be used for this module. A CSS class can be used to create custom CSS styling. You can add multiple classes, separated with a space.</p>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+		</div>
+	</script>
+
+	<!-- end et_pb_gallery_logos -->
 
 	<script type="text/template" id="et-builder-column-template">
 		<a href="#" class="et-pb-insert-module"><span>

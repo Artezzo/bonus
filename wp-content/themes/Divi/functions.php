@@ -18,6 +18,8 @@ function et_setup_theme() {
 
 	require_once( $template_directory . '/includes/functions/sidebars.php' );
 
+	require_once( $template_directory . '/includes/logooo_custom_post.php' );
+
 	load_theme_textdomain( 'Divi', $template_directory . '/lang' );
 
 	require_once( $template_directory . '/epanel/core_functions.php' );
@@ -121,6 +123,11 @@ function et_divi_load_scripts_styles(){
 	wp_register_script( 'jquery-masonry-3', $template_dir . '/js/masonry.js', array( 'jquery', 'imagesloaded' ), $theme_version, true );
 	wp_register_script( 'easypiechart', $template_dir . '/js/jquery.easypiechart.js', array( 'jquery' ), $theme_version, true );
 	wp_enqueue_script( 'divi-custom-script', $template_dir . '/js/custom.js', array( 'jquery' ), $theme_version, true );
+	wp_enqueue_script( 'logoos-js', $template_dir . '/js/logos.js', array( 'jquery' ), $theme_version, true );
+    wp_enqueue_script( 'jquery-carouFredSel', $template_dir . '/js/jquery.carouFredSel-6.2.1.js', array( 'jquery' ), $theme_version, true );
+
+ 
+
 	wp_localize_script( 'divi-custom-script', 'et_custom', array(
 		'ajaxurl'             => admin_url( 'admin-ajax.php' ),
 		'images_uri'          => get_template_directory_uri() . '/images',
@@ -160,6 +167,7 @@ function et_divi_load_scripts_styles(){
 	 * Loads the main stylesheet.
 	 */
 	wp_enqueue_style( 'divi-style', get_stylesheet_uri(), array(), $theme_version );
+	wp_enqueue_style( 'logooos', $template_dir . '/css/logooos.css', array(), $theme_version );
 }
 add_action( 'wp_enqueue_scripts', 'et_divi_load_scripts_styles' );
 
@@ -275,6 +283,8 @@ function et_add_post_meta_box() {
 	add_meta_box( 'et_settings_meta_box', __( 'ET Settings', 'Divi' ), 'et_single_settings_meta_box', 'post', 'side', 'high' );
 	add_meta_box( 'et_settings_meta_box', __( 'ET Settings', 'Divi' ), 'et_single_settings_meta_box', 'product', 'side', 'high' );
 	add_meta_box( 'et_settings_meta_box', __( 'ET Settings', 'Divi' ), 'et_single_settings_meta_box', 'project', 'side', 'high' );
+	add_meta_box( 'et_settings_meta_box', __( 'ET Settings', 'Divi' ), 'et_single_settings_meta_box', 'logooo', 'side', 'high' );
+
 }
 add_action( 'add_meta_boxes', 'et_add_post_meta_box' );
 
@@ -455,7 +465,7 @@ function et_single_settings_meta_box( $post ) {
 			<option value="on" <?php selected( 'on', $side_nav ); ?>><?php esc_html_e( 'On', 'Divi' ); ?></option>
 		</select>
 	</p>
-<?php if ( in_array( $post->post_type, array( 'page', 'project' ) ) ) : ?>
+<?php if ( in_array( $post->post_type, array( 'page', 'project', 'logooo' ) ) ) : ?>
 	<p class="et_pb_page_settings" style="display: none;">
 		<input type="hidden" id="et_pb_use_builder" name="et_pb_use_builder" value="<?php echo esc_attr( get_post_meta( $post_id, '_et_pb_use_builder', true ) ); ?>" />
 		<textarea id="et_pb_old_content" name="et_pb_old_content"><?php echo esc_attr( get_post_meta( $post_id, '_et_pb_old_content', true ) ); ?></textarea>
@@ -3014,6 +3024,236 @@ function et_pb_social_media_follow_network ( $atts, $content = null ) {
 
 	return $output;
 }
+
+add_shortcode( 'et_pb_gallery_logos', 'et_pb_logos' );
+function et_pb_logos( $atts, $content = '' ) {
+	extract(shortcode_atts( array(  
+			'columns' => '8',
+			'backgroundcolor' => 'transparent',
+			'layout_logos' => '',
+			'num' => '-1',
+			'category' => '0',
+			'orderby' => 'date',
+			'order' => 'DESC',
+			'marginbetweenitems' =>'' ,
+			'tooltip' => 'enabled',
+			'responsive' => 'enabled',
+			'grayscale' => 'enabled',
+			'border' => 'disabled',
+			'bordercolor' => 'transparent',
+			'borderradius' => 'logooos_no_radius',
+			'autoplay' => 'true',
+			'scrollduration' => '1000',
+			'pauseduration' => '900',
+			'buttonsbordercolor' => '#DCDCDC',
+			'buttonsbgcolor' => '#FFFFFF',
+			'buttonsarrowscolor' => 'lightgray',
+			'hovereffect' => 'effect5',
+			'hovereffectcolor' => '#DCDCDC',
+			'listborder' => 'enabled',
+			'listbordercolor' => '#DCDCDC',
+			'listborderstyle' => 'dashed',
+			'morelinktext' => '',
+		), $atts));  
+
+		// 	query posts
+		$args =	array ( 'post_type' => 'logooo',
+						'posts_per_page' => $num,
+						'orderby' => $orderby,
+						'order' => $order );
+		
+		if($category > 0) {
+			$args['tax_query'] = array(array('taxonomy' => 'logooocategory','field' => 'id','terms' => $category ));
+		}
+		
+		$logooos_query = new WP_Query( $args );
+		
+		$html='';
+
+		if ($logooos_query->have_posts()) {
+			
+			// ======== Classes ======== //
+			$classes='';
+			
+			//layout
+			if($layout_logos=='grid') {
+				$classes.='logooos_grid ';
+			    $classes.='logooos_responsive ';
+			}
+			else if($layout_logos=='slider') {
+				$classes.='logooos_slider ';
+			}
+			else if($layout_logos=='list') {
+				$classes.='logooos_list ';
+				$classes.='logooos_responsive ';
+			}
+			//tooltip
+			if($layout_logos!='list') {
+				if($tooltip=='enabled') {
+					$classes.='logooos_withtooltip ';
+				}
+			}
+			
+			//grayscale
+			if($grayscale=='enabled') {
+				$classes.='logooos_grayscale ';
+			}
+			
+			//border
+			if($border=='enabled') {
+				$classes.='logooos_border ';
+			}
+			else {
+				$classes.='logooos_no_border ';
+			}
+			
+			//list border
+			if($listborder=='enabled') {
+				$classes.='logooos_listborder ';
+			}
+			
+			//border radius
+			$classes.=$borderradius.' ';
+			
+			//hover effect
+			$classes.=$hovereffect.' ';
+			
+			
+			
+			// ======== Data ======== //
+			$data = '';
+			//columns
+			if($layout_logos!='list') {
+				$data.='data-columns="'.$columns.'" ';
+			}
+			
+			//margin between items
+			if($layout_logos!='list') {
+				$data.='data-marginbetweenitems="'.$marginbetweenitems.'" ';
+			}
+			
+			//hover effect
+			$data.='data-hovereffect="'.$hovereffect.'" ';
+			
+			//hover effect color
+			$data.='data-hovereffectcolor="'.$hovereffectcolor.'" ';
+			
+			//border color
+			$data.='data-bordercolor="'.$bordercolor.'" ';
+			
+			if($layout_logos == 'slider') {
+				// autoplay
+				$data.='data-autoplay="'.$autoplay.'" ';
+				// scroll duration
+				$data.='data-scrollduration="'.$scrollduration.'" ';
+				// pause duration
+				$data.='data-pauseduration="'.$pauseduration.'" ';
+				// buttons border color
+				$data.='data-buttonsbordercolor="'.$buttonsbordercolor.'" ';
+				// buttons background color
+				$data.='data-buttonsbgcolor="'.$buttonsbgcolor.'" ';
+				
+				// buttons arrows color
+				if($buttonsarrowscolor == 'darkgray') {
+					$data.='data-buttonsarrowscolor="logooos_darkgrayarrows" ';
+				}
+				else if($buttonsarrowscolor == 'lightgray') {
+					$data.='data-buttonsarrowscolor="logooos_lightgrayarrows" ';
+				}
+				else if($buttonsarrowscolor == 'white') {
+					$data.='data-buttonsarrowscolor="logooos_whitearrows" ';
+				}
+				
+			}
+			
+			$html.='<div class="logooos_container"><div class="logooos '.$classes.'" '.$data.' >';
+			
+			$i = 0;
+			
+			while ($i < $logooos_query->post_count) {
+			
+				$post = $logooos_query->posts;
+				$thumbnailsrc="";
+				$href= get_permalink( $post[$i]->ID );
+				$imgSize='99%';
+				$bgSize='99%';
+				$link_target='_blank';
+				
+				if(get_post_meta($post[$i]->ID, 'imageSize', true) !='' ) {
+					$imgSize=get_post_meta($post[$i]->ID, 'imageSize', true);
+					$bgSize='-webkit-background-size: '.$imgSize.'; -moz-background-size: '.$imgSize.'; background-size: '.$imgSize.';';
+				}
+				
+				// if has post thumbnail		
+				if ( has_post_thumbnail($post[$i]->ID)) {
+					$thumbnailsrc = wp_get_attachment_url(get_post_meta($post[$i]->ID, '_thumbnail_id', true));
+				}
+				
+				if(get_post_meta($post[$i]->ID, 'link_target', true) !='' ) {
+					$link_target=get_post_meta($post[$i]->ID, 'link_target', true);
+				}
+				
+				
+				$html.='<div class="logooos_item" data-title="'.$post[$i]->post_title.'" style="background-color:'.$backgroundcolor.'; border-color:'.$bordercolor.'">
+						<a href="'.$href.'" target="'.$link_target.'" style="'.$bgSize.'background-image:url('.$thumbnailsrc.'); ">';
+				
+				if($thumbnailsrc!='') {
+					$html.='<img src="'.$thumbnailsrc.'" title="" style="max-width:'.$imgSize.' !important; max-height:'.$imgSize.' !important;" />';
+				}
+				
+				if($hovereffect=='effect2') {
+					$html.='<span class="logooos_effectspan"></span>';
+				}
+								
+				$html.='</a>';
+				
+				
+							
+				$html.='</div>';
+				
+				if($layout_logos=='list') {
+					
+					
+					
+					
+					
+					// text container style 
+					
+					$textContainerStyle = '';
+					
+					if($listborder =='enabled') {
+					
+						if($listbordercolor !='') {
+							$textContainerStyle.='border-bottom-color:'.$listbordercolor.'; ';
+						}
+						if($listborderstyle !='') {
+							$textContainerStyle.='border-bottom-style:'.$listborderstyle.'; ';
+						}
+						
+					}
+					
+					$html.='<div class="logooos_textcontainer" style="'.$textContainerStyle.'">
+								<div class="logooos_title">'.$post[$i]->post_title.'</div>
+								<div class="logooos_text">'.apply_filters('the_content', get_post_meta($post[$i]->ID, 'description', true));
+					if($morelinktext!='' && get_post_meta($post[$i]->ID, 'link', true) !='') {						
+						
+						$html.= '<a '.$href.' target="'.$link_target.'" class="logooos_morelink"  >'.$morelinktext.'</a>';
+					}
+					
+					$html.=	'	</div>
+							</div>';
+				}
+				
+				$i++;
+			}
+			
+			$html.='</div></div>';
+		}
+		
+		return $html;  
+}
+
+
 
 add_shortcode( 'et_pb_countdown_timer', 'et_pb_countdown_timer' );
 function et_pb_countdown_timer( $atts ) {
