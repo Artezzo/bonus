@@ -1,0 +1,92 @@
+.form-hide {
+	display: none;
+}
+
+.form-success-hide div {
+	display: none;
+}
+
+.hidden-messages .wpcf7-mail-sent-ok{
+	display: none !important;
+}
+
+.incorporate-form .next-form{
+	display: none;
+}
+
+.form-next-visible{
+	display: block !important; 
+}
+
+.et_pb_column_1_2 .container-form .et_pb_column_1_2 {
+	width: 100%;
+	margin-right: 0;
+}
+
+.container-form {
+	width: 100%;
+	display: table;
+}
+
+.container-form p {
+	padding-bottom: 0px !important;
+}
+
+.container-form hr {
+	margin: 19px 0 !important;
+	height: 1px;
+	border: 0px !important;
+	background: rgba(0,0,0, 0.1);
+}
+
+/*-------------------[1080px]------------------*/
+@media only screen and ( min-width: 981px ) and ( max-width: 1405px) {
+
+	.container-form .et_pb_row {
+		width: 100%;
+		padding: 10px 0 10px 0 !important;
+	}
+
+	.container-form .et_pb_column{
+		margin-right: 2%;
+	}
+
+	.container-form .et_pb_column_1_4{
+		width: 23%;
+	}
+
+	.container-form .et_pb_column_1_3{
+		width: 31.3%;
+	}
+
+	.container-form .et_pb_column_1_2{
+		width: 48%;
+	}
+
+	.container-form .et_pb_column_2_3 {
+		width: 64%;
+	}
+
+	.container-form .et_pb_column_3_4 {
+		width: 73%;
+	}
+
+	.container-form .et_pb_column_4_4 {
+		width: 98%;
+	}
+}
+
+.container-form .et_pb_row {
+	width: 100%;
+	padding: 10px 0 10px 0 !important;
+}
+
+.container-form .form-control{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 100%;
+	height: 25px;
+	padding:10px;
+	box-sizing:border-box;
+}
+

@@ -1,6 +1,52 @@
 <?php
-
 if ( ! isset( $content_width ) ) $content_width = 1080;
+
+/*
+ * Loads the Options Panel
+ *
+ * If you're loading from a child theme use stylesheet_directory
+ * instead of template_directory
+ */
+define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/' );
+require_once dirname( __FILE__ ) . '/inc/options-framework.php';
+// Loads options.php from child or parent theme
+$optionsfile = locate_template( 'options.php' );
+load_template( $optionsfile );
+/*
+ * This is an example of how to add custom scripts to the options panel.
+ * This one shows/hides the an option when a checkbox is clicked.
+ *
+ * You can delete it if you not using that option
+ */
+add_action( 'optionsframework_custom_scripts', 'optionsframework_custom_scripts' );
+function optionsframework_custom_scripts() { ?>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery('#example_showhidden').click(function() {
+  		jQuery('#section-example_text_hidden').fadeToggle(400);
+	});
+	if (jQuery('#example_showhidden:checked').val() !== undefined) {
+		jQuery('#section-example_text_hidden').show();
+	}
+});
+</script>
+
+<?php
+}
+/*
+ * This is an example of filtering menu parameters
+ */
+
+function prefix_options_menu_filter( $menu ) {
+	$menu['mode'] = 'menu';
+	$menu['page_title'] = __( 'Configurações avançadas', 'textdomain');
+	$menu['menu_title'] = __( 'Configurações avançadas', 'textdomain');
+	$menu['menu_slug'] = 'advanced-settings';
+	return $menu;
+}
+add_filter( 'optionsframework_menu', 'prefix_options_menu_filter' );
+
 
 function et_setup_theme() {
 	global $themename, $shortname, $et_store_options_in_one_row, $default_colorscheme;
@@ -125,6 +171,8 @@ function et_divi_load_scripts_styles(){
 	wp_enqueue_script( 'divi-custom-script', $template_dir . '/js/custom.js', array( 'jquery' ), $theme_version, true );
 	wp_enqueue_script( 'logoos-js', $template_dir . '/js/logos.js', array( 'jquery' ), $theme_version, true );
     wp_enqueue_script( 'jquery-carouFredSel', $template_dir . '/js/jquery.carouFredSel-6.2.1.js', array( 'jquery' ), $theme_version, true );
+    wp_enqueue_script( 'bootstrap-js', $template_dir . '/js/bootstrap.js', array( 'jquery' ), $theme_version, true );
+    wp_enqueue_script( 'maskinput-js', $template_dir . '/js/mask-input.js', array( 'jquery' ), $theme_version, true );
 
  
 
@@ -140,6 +188,7 @@ function et_divi_load_scripts_styles(){
 		'prev'				  => esc_html__( 'Prev', 'Divi' ),
 		'previous'            => esc_html__( 'Previous', 'Divi' ),
 		'next'				  => esc_html__( 'Next', 'Divi' ),
+		'form_data_capture'   => of_get_option('id_form_capture_data'),
 	) );
 
 	if ( 'on' === et_get_option( 'divi_smooth_scroll', false ) ) {
@@ -168,6 +217,9 @@ function et_divi_load_scripts_styles(){
 	 */
 	wp_enqueue_style( 'divi-style', get_stylesheet_uri(), array(), $theme_version );
 	wp_enqueue_style( 'logooos', $template_dir . '/css/logooos.css', array(), $theme_version );
+	wp_enqueue_style( 'bootstrap-css', $template_dir . '/css/bootstrap.css', array(), $theme_version );
+	wp_enqueue_style( 'forms', $template_dir . '/css/forms.css', array(), $theme_version );
+
 }
 add_action( 'wp_enqueue_scripts', 'et_divi_load_scripts_styles' );
 
@@ -3253,6 +3305,105 @@ function et_pb_logos( $atts, $content = '' ) {
 		return $html;  
 }
 
+
+
+add_shortcode( 'et_pb_forms', 'et_pb_forms' );
+function et_pb_forms( $atts ) {
+	extract(
+		shortcode_atts( 
+			array(  
+				'module_id' => '',
+				'module_class' => '',
+				'model_form' => '',
+				'show_form' => '',
+				'subject_form' => '',
+				'include_form' => '',
+			), $atts));
+
+		$container_class = '';
+
+		$hidden_messages;
+
+		if('simples' === $model_form) :
+			$container_class .= 'simple-form';
+			$url_redirect = 'false';
+			$modal = '';
+
+			$html = sprintf(
+			'<div class="container-form %1$s %3$s" id="%4s">
+				%2$s
+			</div>
+			',
+			$container_class,
+			do_shortcode('[contact-form-7 id="'.$include_form.'" ]' ),			
+			$module_class,
+			$module_id
+			);
+
+		elseif('cotacao' === $model_form) :
+
+			$container_class .= 'cotacao-form';
+		    if($show_form == "popup"):
+
+				// Transforma a variavel $show_form para concatenar no atributo data-modal do html
+				$show_form = 'true';
+
+
+				$container_class .= ' hidden_messages';
+				$container_class .= ' popup-form';
+
+				$container_modal = do_shortcode('[contact-form-7 id="'.$include_form.'" ]' );					 
+				
+				$modal = sprintf(
+						'<div class="modal fade" id="modal-form">
+						  <div class="modal-dialog modal-lg">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						      </div>
+						      <div class="modal-body">
+						     	 %1$s
+						      </div>
+						    </div><!-- /.modal-content -->
+						  </div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->', 
+						$container_modal
+						);
+				$url_redirect = 'false';
+			elseif($show_form == "incorporado") :
+
+				// Transforma a variavel $show_form para concatenar no atributo data-modal do html
+				$show_form = 'false';
+				$url_redirect = get_permalink( $include_form );
+				$modal = do_shortcode('[contact-form-7 id="'.$include_form.'" ]' );	
+
+				$container_class .= ' incorporate-form';		
+			endif;
+
+			$html = sprintf(
+			'<div class="container-form %1$s %4$s" id="%5$s">
+				%2$s
+				%3$s
+			</div>
+			',
+			$container_class,
+			do_shortcode('[contact-form-7 id="'.of_get_option('form_capture_data').'" html_id="'.of_get_option('id_form_capture_data').'"]' ),
+			sprintf('<div class="next-form" data-url="%1$s" data-modal="%2$s">%3$s</div>',
+				$url_redirect,
+				$show_form,
+				$modal
+			),
+			$module_class,
+			$module_id
+			);
+
+		endif;
+
+
+		
+
+		return $html;	
+}
 
 
 add_shortcode( 'et_pb_countdown_timer', 'et_pb_countdown_timer' );

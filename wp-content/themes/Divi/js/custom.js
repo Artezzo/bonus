@@ -2735,5 +2735,39 @@
 			});
 		}
 
+		 //Inicio Mascara Telefone
+    	$('.input-telefone').mask("(99) 9999-9999?9").ready(function(event) {
+        	var target, phone, element;
+       		
+       		target = (event.currentTarget) ? event.currentTarget : event.srcElement;
+        	phone = target.value.replace(/\D/g, '');
+        
+        	element = $(target);
+        	element.unmask();
+        
+        	if(phone.length > 10) {
+            	element.mask("(99) 99999-999?9");
+        	} else {
+            	element.mask("(99) 9999-9999?9");
+        	}
+   		});
+
+    	$(".input-rg").mask("99.999.999-*");
+
+	    $(".input-cpf").mask("999.999.999-99");
+
 	} );
 })(jQuery)
+
+function form_capture_data_next(){
+	modal = jQuery('.next-form').attr('data-modal');
+	if(modal == 'true') {
+		jQuery('#modal-form').modal('show');
+	} else {
+			alert(modal);
+
+		jQuery('.next-form').addClass('form-next-visible');
+	}
+
+	return false;
+}

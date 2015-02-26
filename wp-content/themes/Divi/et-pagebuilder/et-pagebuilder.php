@@ -10189,6 +10189,123 @@ echo <<<END
 
 	<!-- end et_pb_gallery_logos -->
 
+	<!-- et_pb_forms -->
+
+
+	<script type="text/template" id="et-builder-et_pb_forms-module-template">
+		<h3 class="et-pb-settings-heading">Configurações dos logotipos</h3>
+
+		<div class="et-pb-main-settings">
+			
+			<div class="et-pb-option et-pb-option-main-content et-pb-option-advanced-module">
+				<label for="et_pb_content_new">Content: </label>
+
+				<div class="et-pb-option-container">
+					<div id="et_pb_content_new"><%= typeof( et_pb_content_new )!== 'undefined' ? et_pb_content_new : '' %></div>
+					<p class="description">Here you can define the content that will be placed within the current tab.</p>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_model_form">Modelo de formulário: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_model_form" id="et_pb_model_form" class="et-pb-affects" data-affects="#et_pb_show_form" data-affects="#et_pb_capture_form" >
+						<option value="simples"<%= typeof( et_pb_model_form ) !== 'undefined' && 'simples' === et_pb_model_form ?  ' selected="selected"' : '' %>>Simples</option>
+						<option value="cotacao"<%= typeof( et_pb_model_form ) !== 'undefined' && 'cotacao' === et_pb_model_form ?  ' selected="selected"' : '' %>>Cotação</option>
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option et-pb-depends" data-depends_show_if="cotacao">
+				<label for="et_pb_show_form">Modo de exibição: </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_show_form" id="et_pb_show_form">
+						<option value="popup"<%= typeof( et_pb_show_form ) !== 'undefined' && 'popup' === et_pb_show_form ?  ' selected="selected"' : '' %>>Pop-up</option>
+						<option value="incorporado"<%= typeof( et_pb_show_form ) !== 'undefined' && 'incorporado' === et_pb_show_form ?  ' selected="selected"' : '' %>>Incorporado</option>
+					</select>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+
+			<div class="et-pb-option">
+				<label for="et_pb_subject_form">Assunto do e-mail a ser enviado: </label>
+
+				<div class="et-pb-option-container">
+					<input id="et_pb_subject_form" type="text" class="regular-text" value="<%= typeof( et_pb_subject_form ) !== 'undefined' ?  et_pb_subject_form : '' %>" />
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_subject_form">Descrição do formulário: </label>
+
+				<div class="et-pb-option-container">
+					<input id="et_pb_subject_form" type="text" class="regular-text" value="<%= typeof( et_pb_subject_form ) !== 'undefined' ?  et_pb_subject_form : '' %>" />
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_include_forms">
+				  Seleciione um formulário para exibir :
+		        </label>
+				<div class="et-pb-option-container">
+					<select name="et_pb_include_form" id="et_pb_include_form">
+END;
+						$id_form = of_get_option('form_capture_data');
+
+						$args = array('post_type' => 'wpcf7_contact_form');
+						$loop = new WP_Query( $args );
+						while ( $loop->have_posts() ) : $loop->the_post();
+
+							$id = get_the_id();
+							$title = get_the_title();
+
+							if($id_form !== $id) :
+							
+								printf( '<option value="%1$s"%2$s>%3$s</option>',
+									$id,
+									'<%= typeof( et_pb_include_form ) !== "undefined" && "'.$id.'" === et_pb_include_form ?   selected="selected" : "" %>',
+									$title
+								);
+
+							endif;
+						endwhile;
+echo <<<END
+					</select>
+
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+			<div class="et-pb-option">
+				<label for="et_pb_module_id">
+END;
+esc_html_e( 'CSS ID', 'Divi' );
+echo <<<END
+: </label>
+
+				<div class="et-pb-option-container">
+					<input id="et_pb_module_id" type="text" class="regular-text" value="<%= typeof( et_pb_module_id ) !== 'undefined' ?  et_pb_module_id : '' %>" />
+					<p class="description">
+END;
+esc_html_e( 'Enter an optional CSS ID to be used for this module. An ID can be used to create custom CSS styling, or to create links to particular sections of your page.', 'Divi' );
+echo <<<END
+</p>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+
+
+			<div class="et-pb-option">
+				<label for="et_pb_module_class">CSS Class: </label>
+
+				<div class="et-pb-option-container">
+					<input id="et_pb_module_class" type="text" class="regular-text" value="<%= typeof( et_pb_module_class ) !== 'undefined' ?  et_pb_module_class : '' %>" />
+					<p class="description">Enter optional CSS classes to be used for this module. A CSS class can be used to create custom CSS styling. You can add multiple classes, separated with a space.</p>
+				</div> <!-- .et-pb-option-container -->
+			</div> <!-- .et-pb-option -->
+		</div>
+	</script>
+
+	<!-- end et_pb_forms -->
+
 	<script type="text/template" id="et-builder-column-template">
 		<a href="#" class="et-pb-insert-module"><span>
 END;
