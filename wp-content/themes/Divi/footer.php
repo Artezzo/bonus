@@ -36,7 +36,6 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 						get_template_part( 'includes/social_icons', 'footer' );
 					}
 				?>
-
 						<p id="footer-info"><?php printf( __( 'Desenvolvido por %1$s | Pelo projeto %2$s', 'Divi' ), '<a href="http://www.artezzo.com.br" title="Artezzo Marketing & Comunicação">Artezzo Marketing & Comunicação</a>', '<a href="http://www.solucoesparacorretores.com.br">Soluções para corretores</a>' ); ?></p>
 					</div>	<!-- .container -->
 				</div>
