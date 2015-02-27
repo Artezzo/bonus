@@ -219,6 +219,8 @@ function et_divi_load_scripts_styles(){
 	wp_enqueue_style( 'logooos', $template_dir . '/css/logooos.css', array(), $theme_version );
 	wp_enqueue_style( 'bootstrap-css', $template_dir . '/css/bootstrap.css', array(), $theme_version );
 	wp_enqueue_style( 'forms', $template_dir . '/css/forms.css', array(), $theme_version );
+	wp_enqueue_style( 'dinamic-style', $template_dir . '/css/dinamic-style.php', array(), $theme_version );
+
 
 }
 add_action( 'wp_enqueue_scripts', 'et_divi_load_scripts_styles' );
