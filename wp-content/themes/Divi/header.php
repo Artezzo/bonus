@@ -139,3 +139,9 @@
 
 		<div id="et-main-area">
 
+		<?php if(is_home() || is_front_page()) :
+				echo do_shortcode( '[rev_slider home-page]' );
+			endif;
+		?>
+		
+
