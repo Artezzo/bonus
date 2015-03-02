@@ -14,7 +14,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<title><?php wp_title(); ?></title>
+	<title><?php elegant_titles(); ?></title>
 	<?php elegant_description(); ?>
 	<?php elegant_keywords(); ?>
 	<?php elegant_canonical(); ?>
@@ -64,53 +64,16 @@
 		<div id="top-header" class="<?php echo esc_attr( $secondary_nav_class ); ?>">
 			<div class="container clearfix">
 
-			<?php if ( $et_contact_info_defined ) : ?>
-
-				<div id="et-info">
-				<?php if ( '' !== ( $et_phone_number = et_get_option( 'phone_number' ) ) ) : ?>
-					<span id="et-info-phone"><?php echo esc_html( $et_phone_number ); ?></span>
-				<?php endif; ?>
-
-				<?php if ( '' !== ( $et_email = et_get_option( 'header_email' ) ) ) : ?>
-					<a href="<?php echo esc_attr( 'mailto:' . $et_email ); ?>"><span id="et-info-email"><?php echo esc_html( $et_email ); ?></span></a>
-				<?php endif; ?>
-
-				<?php
-				if ( true === $show_header_social_icons ) {
-					get_template_part( 'includes/social_icons', 'header' );
-				} ?>
-				</div> <!-- #et-info -->
-
-			<?php endif; // true === $et_contact_info_defined ?>
-
+			
 				<div id="et-secondary-menu">
 				<?php
-					if ( ! $et_contact_info_defined && true === $show_header_social_icons ) {
-						get_template_part( 'includes/social_icons', 'header' );
-					} else if ( $et_contact_info_defined && true === $show_header_social_icons ) {
-						ob_start();
-
-						get_template_part( 'includes/social_icons', 'header' );
-
-						$duplicate_social_icons = ob_get_contents();
-
-						ob_end_clean();
-
-						printf(
-							'<div class="et_duplicate_social_icons">
-								%1$s
-							</div>',
-							$duplicate_social_icons
-						);
-					}
-
 					if ( '' !== $et_secondary_nav ) {
 						echo $et_secondary_nav;
-					}
-
-					et_show_cart_total();
-				?>
+					}?>
 				</div> <!-- #et-secondary-menu -->
+				<?php
+                   echo do_shortcode('[et_social_follow icon_style="slide" icon_shape="circle" icons_location="top" col_number="auto" counts="true" counts_num="100" custom_colors="true" bg_color="#ffffff" bg_color_hover="#0db7c4" icon_color="#0db7c4" icon_color_hover="#ffffff" outer_color="light"]'); 
+                 ?>
 
 			</div> <!-- .container -->
 		</div> <!-- #top-header -->
@@ -123,10 +86,25 @@
 					? $user_logo
 					: $template_directory_uri . '/images/logo.png';
 			?>
+				
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" />
 				</a>
+				<div class="box-info-header">
+					<div class="box-telefone-header">
+						<?php echo of_get_option('telefone_destaque'); ?>
+					</div>
 
+					<div class="box-email-header">
+						<?php echo of_get_option('email'); ?>
+					</div>
+				</div>
+			</div> <!-- .container -->
+
+		</header> <!-- #main-header -->
+					<div class="menu-container">
+				<div class="container">
+					
 				<div id="et-top-navigation">
 					<nav id="top-menu-nav">
 					<?php
@@ -153,32 +131,11 @@
 					?>
 					</nav>
 
-					<?php
-					if ( ! $et_top_info_defined ) {
-						et_show_cart_total( array(
-							'no_text' => true,
-						) );
-					}
-					?>
-
-					<?php if ( false !== et_get_option( 'show_search_icon', true ) ) : ?>
-					<div id="et_top_search">
-						<span id="et_search_icon"></span>
-						<form role="search" method="get" class="et-search-form et-hidden" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<?php
-							printf( '<input type="search" class="et-search-field" placeholder="%1$s" value="%2$s" name="s" title="%3$s" />',
-								esc_attr__( 'Search &hellip;', 'Divi' ),
-								get_search_query(),
-								esc_attr__( 'Search for:', 'Divi' )
-							);
-						?>
-						</form>
-					</div>
-					<?php endif; // true === et_get_option( 'show_search_icon', false ) ?>
 
 					<?php do_action( 'et_header_top' ); ?>
 				</div> <!-- #et-top-navigation -->
-			</div> <!-- .container -->
-		</header> <!-- #main-header -->
+				</div>
+			</div>
 
 		<div id="et-main-area">
+
